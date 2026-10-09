@@ -69,25 +69,26 @@ export default {
     // Filling a stage taller than the process, the room left under it is
     // shared between the bands: each grows by as much, what it holds centred
     // in it. Its routes too — those drawn under the lanes stay under them.
+    // Where the routes drawn under the lanes end — the flows going back,
+    // which the layout runs below every band —, or 0 when none is.
+    routesBottom() {
+      const below = this.flows.flatMap((flow) => flow.points ?? []).map(([, y]) => y).filter((y) => y > this.height);
+
+      return below.length ? Math.max(...below) + 24 : 0;
+    },
+
     stretch() {
       if (!this.fill || !this.viewHeight || !this.bands.length) {
         return 0;
       }
 
-      const routes = this.flows.flatMap((flow) => flow.points ?? []).map(([, y]) => y + 24);
-      const bottom = Math.max(this.height, ...routes);
-
-      return Math.max(0, this.viewHeight - bottom) / this.bands.length;
+      return Math.max(0, this.viewHeight - Math.max(this.height, this.routesBottom)) / this.bands.length;
     },
 
     regions() {
-      return this.lanes.map((lane) => {
+      const lanes = this.lanes.map((lane) => {
         const top = lane.y + this.edgeShift(lane.y);
-        // The bands at the foot run to the stage's: the routes drawn under
-        // the lanes are then inside the last one.
-        const bottom = this.stretch && lane.y + lane.height >= this.height
-          ? this.viewHeight
-          : lane.y + lane.height + this.edgeShift(lane.y + lane.height);
+        const bottom = lane.y + lane.height + this.edgeShift(lane.y + lane.height);
 
         return {
           id: lane.laneId,
@@ -99,6 +100,25 @@ export default {
           height: bottom - top
         };
       });
+
+      if (!this.routesBottom || !lanes.length) {
+        return lanes;
+      }
+
+      // The routes going back belong to no lane: a band of their own under
+      // the lanes, its head empty, so the heads run down to the foot.
+      const top = this.height + this.bands.length * this.stretch;
+      const bottom = this.stretch ? this.viewHeight : this.routesBottom;
+
+      return [...lanes, {
+        id: 'bpmn-returns',
+        title: '',
+        kind: 'returns',
+        x: lanes[0].x,
+        y: top,
+        width: Math.max(...lanes.map((lane) => lane.width)),
+        height: Math.max(0, bottom - top)
+      }];
     },
 
     elements() {

@@ -32,7 +32,7 @@
                      class="block stage-shape stage-shape--box"
                      :class="shapeClass(element)"
                      :title="nodeLabel(element)">
-                    <span v-if="nodeIcon(element)" class="stage-shape--mark" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
+                    <span v-if="nodeIcon(element)" class="block--mark" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
                     <span class="stage-shape--label">[[ element.title ]]</span>
                 </div>
                 <div v-else

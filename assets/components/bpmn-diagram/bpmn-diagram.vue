@@ -128,7 +128,6 @@ export default {
         kind: node.kind,
         element: node.element,
         definitions: node.definitions ?? [],
-        attached: Boolean(node.attachedTo),
         x: node.x,
         y: node.y + this.shift(node.y + node.height / 2),
         width: node.width,
@@ -142,7 +141,8 @@ export default {
         from: flow.sourceId,
         to: flow.targetId,
         label: flow.name || flow.condition || null,
-        kind: flow.isDefault ? 'default' : (flow.condition ? 'conditional' : null),
+        // A way under a condition dashed, the way when none holds heavier.
+        kind: flow.isDefault ? 'strong' : (flow.condition ? 'dashed' : null),
         points: flow.points?.length ? flow.points.map(([x, y]) => [x, y + this.shift(y)]) : null
       }));
     },
@@ -219,6 +219,29 @@ export default {
     // end at it or above.
     edgeShift(y) {
       return this.stretch * this.bands.filter((band) => band.y + band.height <= y + 0.5).length;
+    },
+
+    // What a node is, as a figure of the stage: its shape, its edge, its tone.
+    // A start in the tone of what goes, an end heavier in the tone of what
+    // stops, a wait doubled, an interruption doubled in the tone of a warning,
+    // a choice in that tone too; a box holding more than itself heavier.
+    shapeClass(element) {
+      const shape = {
+        task: [],
+        activity: ['stage-shape--thick'],
+        gateway: ['stage-shape--diamond', 'stage-shape--tone-warning'],
+        event: ['stage-shape--circle']
+      }[element.kind] ?? [];
+
+      const event = {
+        startEvent: ['stage-shape--tone-success'],
+        endEvent: ['stage-shape--thick', 'stage-shape--tone-error'],
+        intermediateCatchEvent: ['stage-shape--double'],
+        intermediateThrowEvent: ['stage-shape--double'],
+        boundaryEvent: ['stage-shape--double', 'stage-shape--tone-warning']
+      }[element.element] ?? [];
+
+      return [...shape, ...event];
     },
 
     nodeIcon(element) {

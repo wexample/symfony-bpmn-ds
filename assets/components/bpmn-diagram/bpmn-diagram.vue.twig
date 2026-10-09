@@ -25,25 +25,24 @@
                 :highlighted="highlighted"
                 @update:selection="(value) => $emit('update:selection', value)"
         >
+            {#- Each node drawn with the figures of the stage: a box for what is
+                done, a circle for an event, a diamond for a choice. -#}
             <template #element="{ element }">
-                {#- A task: a card, its kind in its corner, its name in the middle. -#}
                 <div v-if="element.kind === 'task' || element.kind === 'activity'"
-                     class="bpmn-node bpmn-node--task"
-                     :class="'bpmn-node--' + element.element"
+                     class="block stage-shape stage-shape--box"
+                     :class="shapeClass(element)"
                      :title="nodeLabel(element)">
-                    <span v-if="nodeIcon(element)" class="bpmn-node--type" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
-                    <span class="bpmn-node--name">[[ element.title ]]</span>
+                    <span v-if="nodeIcon(element)" class="stage-shape--mark" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
+                    <span class="stage-shape--label">[[ element.title ]]</span>
                 </div>
-                {#- An event: a circle, its name under it; a gateway: a diamond,
-                    its question under it. -#}
                 <div v-else
-                     class="bpmn-node"
-                     :class="['bpmn-node--' + element.kind, 'bpmn-node--' + element.element, { 'bpmn-node--attached': element.attached }]"
+                     class="stage-shape"
+                     :class="shapeClass(element)"
                      :title="nodeLabel(element)">
-                    <span class="bpmn-node--shape">
-                        <span v-if="nodeIcon(element)" class="bpmn-node--glyph" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
+                    <span class="stage-shape--figure">
+                        <span v-if="nodeIcon(element)" class="stage-shape--glyph" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
                     </span>
-                    <span v-if="element.title" class="bpmn-node--caption">[[ element.title ]]</span>
+                    <span v-if="element.title" class="stage-shape--caption">[[ element.title ]]</span>
                 </div>
             </template>
         </stage>

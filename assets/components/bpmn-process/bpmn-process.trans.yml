@@ -1,9 +1,9 @@
 en:
+  actors: Who may act
+  validation: Validation
   tab:
     description: Description
     paths: Paths
-    actors: Actors
-    validation: Validation
   step:
     title: Step
     none: Press a step of the diagram to read what it is. Drag the diagram sideways to follow it.
@@ -13,11 +13,11 @@ en:
     documentation: Documentation
 
 fr:
+  actors: Qui peut agir
+  validation: Validation
   tab:
     description: Description
     paths: Chemins
-    actors: Acteurs
-    validation: Validation
   step:
     title: Étape
     none: Cliquez sur une étape du diagramme pour savoir ce qu'elle est. Faites glisser le diagramme pour le suivre.

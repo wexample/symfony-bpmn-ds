@@ -15,9 +15,9 @@ const ELEMENT = 'WexampleSymfonyBpmnDsBundle.components.bpmn-diagram.bpmn-diagra
 const ASIDE_ZONE = 'bpmn.process.aside';
 
 // A process read as a workspace: its diagram the whole of the room, and on its
-// right an inspector the reader widens, its tools in tabs — what the process
-// and the step pressed are, its paths walked on the diagram, who acts, what
-// its validation says. The tab open is remembered.
+// right an inspector the reader widens, in two tabs: what the process is —
+// the step pressed, who acts, what its validation says —, and its paths walked
+// on the diagram. The tab open is remembered.
 export default {
   template: '#vue-template-wexample-symfony-bpmn-ds-bundle-components-bpmn-process-bpmn-process',
 
@@ -49,7 +49,8 @@ export default {
       nodes: [],
       highlighted: [],
       selection: [],
-      tab: uiStateGet(this.app, 'ui.bpmn.process.tab', 'description'),
+      // A tab remembered from before there were only two is the first one.
+      tab: uiStateGet(this.app, 'ui.bpmn.process.tab', 'description') === 'paths' ? 'paths' : 'description',
       asideSize: uiStateGet(this.app, `ui.layout.zone.${ASIDE_ZONE}.size`, null)
     };
   },
@@ -58,9 +59,7 @@ export default {
     tabs() {
       return [
         { key: 'description', label: this.t('tab.description'), icon: 'ph:bold/info' },
-        { key: 'paths', label: this.t('tab.paths'), icon: 'ph:bold/path' },
-        { key: 'actors', label: this.t('tab.actors'), icon: 'ph:bold/users-three' },
-        { key: 'validation', label: this.t('tab.validation'), icon: 'ph:bold/check-circle' }
+        { key: 'paths', label: this.t('tab.paths'), icon: 'ph:bold/path' }
       ];
     },
 

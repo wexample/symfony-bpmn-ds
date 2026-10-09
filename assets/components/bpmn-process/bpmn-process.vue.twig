@@ -29,8 +29,8 @@
         </div>
 
         {#- The inspector, against the right edge: widened from its inner edge,
-            its tools in tabs, each kept alive while another is shown — a path
-            walked stays walked. -#}
+            what the process is in one tab, its paths in the other, each kept
+            alive while the other is shown — a path walked stays walked. -#}
         <div class="zone zone--narrow zone--size-7 zone--panel zone--split zone--split--vertical bpmn-process--aside"
              :data-zone-id="asideZone"
              :style="asideStyle">
@@ -38,32 +38,27 @@
             <div class="zone zone--narrow">
                 <tab :items="tabs" :active-key="tab" fill compact @change="onTab"></tab>
             </div>
-            {#- Each tool its own region under the tabs: most scroll whole, the
-                paths keep their bar above what scrolls. -#}
+            {#- Each tool its own region under the tabs: the description
+                scrolls whole, the paths keep their bar against the tabs. -#}
             <div v-show="tab === 'description'" class="zone zone--scrollable">
                 <div class="zone--content stack--vertical">
                     <p v-if="documentation">[[ documentation ]]</p>
                     <h3>[[ t('step.title') ]]</h3>
                     <properties v-if="picked" :items="pickedProperties" stacked></properties>
                     <p v-else class="fallback">[[ t('step.none') ]]</p>
+                    <h3>[[ t('actors') ]]</h3>
+                    <bpmn-rights-table :filters="{ process: process }"></bpmn-rights-table>
+                    <h3>[[ t('validation') ]]</h3>
+                    <bpmn-issues :process="process"></bpmn-issues>
                 </div>
             </div>
             <bpmn-path-walk
                     v-show="tab === 'paths'"
+                    class="zone--joined-start"
                     :process="process"
                     :lanes="lanes"
                     @update:highlighted="(value) => highlighted = value"
             ></bpmn-path-walk>
-            <div v-show="tab === 'actors'" class="zone zone--scrollable">
-                <div class="zone--content">
-                    <bpmn-rights-table :filters="{ process: process }"></bpmn-rights-table>
-                </div>
-            </div>
-            <div v-show="tab === 'validation'" class="zone zone--scrollable">
-                <div class="zone--content">
-                    <bpmn-issues :process="process"></bpmn-issues>
-                </div>
-            </div>
         </div>
     </div>
 {%- endblock -%}

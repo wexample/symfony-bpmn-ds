@@ -12,7 +12,8 @@
 
 {%- block vue_body -%}
     {#- A column of regions: the paths and the steps in a bar that stays, the
-        walk under it scrolling on its own. -#}
+        walk under it scrolling on its own, held against the bar. Set against
+        a bar of its own above it, the page joins it there (`zone--joined-start`). -#}
     <div class="zone zone--split zone--split--vertical bpmn-path-walk">
         <div v-if="paths.length" class="zone zone--narrow">
             <tab :items="pathTabs" :active-key="current === null ? '' : String(current)" compact @change="(key) => pick(Number(key))"></tab>
@@ -26,7 +27,7 @@
             </div>
         </div>
 
-        <div class="zone zone--scrollable">
+        <div class="zone zone--scrollable" :class="{ 'zone--joined-start': paths.length }">
             <div class="zone--content stack--vertical">
                 <p v-if="!loading && !paths.length" class="fallback">[[ t('none') ]]</p>
                 <template v-if="path">

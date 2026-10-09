@@ -32,8 +32,8 @@
             what the process is in one tab, its paths in the other, each kept
             alive while the other is shown — a path walked stays walked. -#}
         <div class="zone zone--narrow zone--size-7 zone--panel zone--split zone--split--vertical bpmn-process--aside"
-             :data-zone-id="asideZone"
-             :style="asideStyle">
+             ref="aside"
+             :data-zone-id="asideZone">
             <zone-resizer edge="start"></zone-resizer>
             <div class="zone zone--narrow">
                 <tab :items="tabs" :active-key="tab" fill compact @change="onTab"></tab>

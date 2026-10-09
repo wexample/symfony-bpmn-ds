@@ -50,8 +50,7 @@ export default {
       highlighted: [],
       selection: [],
       // A tab remembered from before there were only two is the first one.
-      tab: uiStateGet(this.app, 'ui.bpmn.process.tab', 'description') === 'paths' ? 'paths' : 'description',
-      asideSize: uiStateGet(this.app, `ui.layout.zone.${ASIDE_ZONE}.size`, null)
+      tab: uiStateGet(this.app, 'ui.bpmn.process.tab', 'description') === 'paths' ? 'paths' : 'description'
     };
   },
 
@@ -65,12 +64,6 @@ export default {
 
     asideZone() {
       return ASIDE_ZONE;
-    },
-
-    asideStyle() {
-      return Number.isFinite(Number(this.asideSize)) && this.asideSize !== null
-        ? { '--zone-size': `${Number(this.asideSize)}px` }
-        : null;
     },
 
     picked() {
@@ -94,6 +87,17 @@ export default {
         { key: this.t('step.lane'), value: lane ? (lane.name || lane.laneId) : '—' },
         ...(node.documentation ? [{ key: this.t('step.documentation'), value: node.documentation, full: true }] : [])
       ];
+    }
+  },
+
+  // The width the reader left the inspector at, written once: from then on
+  // the handle writes it, and a binding would put the first one back at every
+  // redraw — a step walked.
+  mounted() {
+    const size = Number(uiStateGet(this.app, `ui.layout.zone.${ASIDE_ZONE}.size`, null));
+
+    if (size > 0) {
+      this.$refs.aside.style.setProperty('--zone-size', `${size}px`);
     }
   },
 

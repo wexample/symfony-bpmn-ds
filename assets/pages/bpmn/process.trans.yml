@@ -1,18 +1,7 @@
 en:
   page_title: Process
   page_icon: ph:bold/flow-arrow
-  section:
-    rights: Who may act
-    rights_description: >-
-      Each task, and who may do it: the role or the team grant its lane takes.
-    validation: Validation
 
 fr:
   page_title: Processus
   page_icon: ph:bold/flow-arrow
-  section:
-    rights: Qui peut agir
-    rights_description: >-
-      Chaque tâche, et qui peut la faire : le rôle ou le droit d'équipe que
-      prend son couloir.
-    validation: Validation

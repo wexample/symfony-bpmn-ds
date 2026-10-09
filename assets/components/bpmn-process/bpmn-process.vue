@@ -1,24 +1,45 @@
 <script>
+import Properties from '@wexample/symfony-design-system/components/properties/properties.vue';
+import Tab from '@wexample/symfony-design-system/components/tab/tab.vue';
+import ZoneResizer from '@wexample/symfony-design-system/components/zone-resizer/zone-resizer.vue';
+import { uiStateGet, uiStateSet } from '@wexample/symfony-design-system/js/Helper/UiStateHelper';
 import BpmnDiagram from '../bpmn-diagram/bpmn-diagram.vue';
+import BpmnIssues from '../bpmn-issues/bpmn-issues.vue';
 import BpmnPathWalk from '../bpmn-path-walk/bpmn-path-walk.vue';
+import BpmnRightsTable from '../bpmn-rights-table/bpmn-rights-table.vue';
 
 const T = 'WexampleSymfonyBpmnDsBundle.components.bpmn-process.bpmn-process::';
+const ELEMENT = 'WexampleSymfonyBpmnDsBundle.components.bpmn-diagram.bpmn-diagram::element.';
 
-// A process read: its diagram, a path walked on it, and what the node pressed
-// is — its kind, who acts at it, what its documentation says — in the bar
-// under the diagram.
+// The zone of the inspector, whose width the page remembers.
+const ASIDE_ZONE = 'bpmn.process.aside';
+
+// A process read as a workspace: its diagram the whole of the room, and on its
+// right an inspector the reader widens, its tools in tabs — what the process
+// and the step pressed are, its paths walked on the diagram, who acts, what
+// its validation says. The tab open is remembered.
 export default {
   template: '#vue-template-wexample-symfony-bpmn-ds-bundle-components-bpmn-process-bpmn-process',
 
   components: {
     BpmnDiagram,
-    BpmnPathWalk
+    BpmnIssues,
+    BpmnPathWalk,
+    BpmnRightsTable,
+    Properties,
+    Tab,
+    ZoneResizer
   },
 
   props: {
     process: {
       type: String,
       required: true
+    },
+    // What the process is, as its file says it: the head of its description.
+    documentation: {
+      type: String,
+      default: null
     }
   },
 
@@ -27,33 +48,53 @@ export default {
       lanes: [],
       nodes: [],
       highlighted: [],
-      selection: []
+      selection: [],
+      tab: uiStateGet(this.app, 'ui.bpmn.process.tab', 'description'),
+      asideSize: uiStateGet(this.app, `ui.layout.zone.${ASIDE_ZONE}.size`, null)
     };
   },
 
   computed: {
+    tabs() {
+      return [
+        { key: 'description', label: this.t('tab.description'), icon: 'ph:bold/info' },
+        { key: 'paths', label: this.t('tab.paths'), icon: 'ph:bold/path' },
+        { key: 'actors', label: this.t('tab.actors'), icon: 'ph:bold/users-three' },
+        { key: 'validation', label: this.t('tab.validation'), icon: 'ph:bold/check-circle' }
+      ];
+    },
+
+    asideZone() {
+      return ASIDE_ZONE;
+    },
+
+    asideStyle() {
+      return Number.isFinite(Number(this.asideSize)) && this.asideSize !== null
+        ? { '--zone-size': `${Number(this.asideSize)}px` }
+        : null;
+    },
+
     picked() {
       return this.selection.length === 1
         ? this.nodes.find((node) => node.nodeId === this.selection[0]) ?? null
         : null;
     },
 
-    status() {
+    pickedProperties() {
       const node = this.picked;
 
       if (!node) {
-        return this.t('hint');
+        return [];
       }
 
       const lane = this.lanes.find((candidate) => candidate.laneId === node.laneId);
-      const parts = [
-        node.name || node.nodeId,
-        this.trans(`WexampleSymfonyBpmnDsBundle.components.bpmn-diagram.bpmn-diagram::element.${node.element}`),
-        lane ? (lane.name || lane.laneId) : null,
-        node.documentation
-      ];
 
-      return parts.filter(Boolean).join(' · ');
+      return [
+        { key: this.t('step.name'), value: node.name || node.nodeId },
+        { key: this.t('step.kind'), value: this.trans(`${ELEMENT}${node.element}`) },
+        { key: this.t('step.lane'), value: lane ? (lane.name || lane.laneId) : '—' },
+        ...(node.documentation ? [{ key: this.t('step.documentation'), value: node.documentation, full: true }] : [])
+      ];
     }
   },
 
@@ -65,6 +106,11 @@ export default {
     onLoaded({ lanes, nodes }) {
       this.lanes = lanes;
       this.nodes = nodes;
+    },
+
+    onTab(key) {
+      this.tab = key;
+      uiStateSet(this.app, 'ui.bpmn.process.tab', key);
     }
   }
 };

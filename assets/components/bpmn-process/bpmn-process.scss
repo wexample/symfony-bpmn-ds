@@ -1,18 +1,8 @@
-@use '@wexample/symfony-design-system/css/shapes/block';
-@use '@wexample/symfony-design-system/css/shapes/status-bar';
-
-.bpmn-process {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
+// The diagram fills its zone, corner to corner.
+.bpmn-process--stage {
+  overflow: hidden;
 }
 
-.bpmn-process--diagram {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-
-  .bpmn-diagram > .stage {
-    border-radius: 0;
-  }
+.bpmn-process--tabs {
+  padding-inline: var(--space-2);
 }

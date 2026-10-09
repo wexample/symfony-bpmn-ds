@@ -1,5 +1,27 @@
 en:
-  hint: Drag the diagram sideways to follow it; press a step to read what it is.
+  tab:
+    description: Description
+    paths: Paths
+    actors: Actors
+    validation: Validation
+  step:
+    title: Step
+    none: Press a step of the diagram to read what it is. Drag the diagram sideways to follow it.
+    name: Name
+    kind: Kind
+    lane: Who acts
+    documentation: Documentation
 
 fr:
-  hint: Faites glisser le diagramme pour le suivre ; cliquez sur une étape pour savoir ce qu'elle est.
+  tab:
+    description: Description
+    paths: Chemins
+    actors: Acteurs
+    validation: Validation
+  step:
+    title: Étape
+    none: Cliquez sur une étape du diagramme pour savoir ce qu'elle est. Faites glisser le diagramme pour le suivre.
+    name: Nom
+    kind: Nature
+    lane: Qui agit
+    documentation: Documentation

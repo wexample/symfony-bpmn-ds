@@ -18,6 +18,10 @@
   }
 }
 
+.bpmn-diagram--fill {
+  height: 100%;
+}
+
 // The stage rings what is picked with the element's own corners: an event is
 // round.
 .bpmn-diagram .stage--element--event {

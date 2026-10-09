@@ -16,6 +16,7 @@ const T = 'WexampleSymfonyBpmnDsBundle.components.bpmn-diagram.bpmn-diagram::';
 // repositories generated from them: the component is given the process's id
 // and nothing else. `highlighted` lights nodes and flows by their BPMN ids —
 // a path walked —, and a node pressed is handed back (`update:selection`).
+// It stands as tall as its lanes, or as what holds it (`fill`).
 export default {
   template: '#vue-template-wexample-symfony-bpmn-ds-bundle-components-bpmn-diagram-bpmn-diagram',
 
@@ -35,6 +36,11 @@ export default {
     highlighted: {
       type: Array,
       default: () => []
+    },
+    // The height of what holds it, rather than of its lanes.
+    fill: {
+      type: Boolean,
+      default: false
     }
   },
 

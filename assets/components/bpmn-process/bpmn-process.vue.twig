@@ -1,8 +1,13 @@
 {%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
 
 {%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/properties') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/tab') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/zone-resizer') -}}
     {{- vue_require(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-diagram') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-issues') -}}
     {{- vue_require(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-path-walk') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-rights-table') -}}
 {%- endblock -%}
 
 {%- block vue_config -%}
@@ -11,21 +16,46 @@
 {%- endblock -%}
 
 {%- block vue_body -%}
-    <div class="bpmn-process">
-        <div class="block block--card bpmn-process--diagram">
+    <div class="zone zone--split bpmn-process">
+        {#- The diagram: what is left of the width, and the whole height. -#}
+        <div class="zone zone--panel bpmn-process--stage">
             <bpmn-diagram
+                    fill
                     :process="process"
                     :highlighted="highlighted"
                     @loaded="onLoaded"
                     @update:selection="(value) => selection = value"
             ></bpmn-diagram>
-            <div class="status-bar" aria-live="polite">[[ status ]]</div>
         </div>
 
-        <bpmn-path-walk
-                :process="process"
-                :lanes="lanes"
-                @update:highlighted="(value) => highlighted = value"
-        ></bpmn-path-walk>
+        {#- The inspector, against the right edge: widened from its inner edge,
+            its tools in tabs, each kept alive while another is shown — a path
+            walked stays walked. -#}
+        <div class="zone zone--narrow zone--size-6 zone--panel zone--split zone--split--vertical bpmn-process--aside"
+             :data-zone-id="asideZone"
+             :style="asideStyle">
+            <zone-resizer edge="start"></zone-resizer>
+            <div class="zone zone--narrow bpmn-process--tabs">
+                <tab :items="tabs" :active-key="tab" fill compact @change="onTab"></tab>
+            </div>
+            <div class="zone zone--scrollable">
+                <div class="zone--content stack--vertical">
+                    <template v-if="tab === 'description'">
+                        <p v-if="documentation">[[ documentation ]]</p>
+                        <h3>[[ t('step.title') ]]</h3>
+                        <properties v-if="picked" :items="pickedProperties" stacked></properties>
+                        <p v-else class="fallback">[[ t('step.none') ]]</p>
+                    </template>
+                    <bpmn-path-walk
+                            v-show="tab === 'paths'"
+                            :process="process"
+                            :lanes="lanes"
+                            @update:highlighted="(value) => highlighted = value"
+                    ></bpmn-path-walk>
+                    <bpmn-rights-table v-show="tab === 'actors'" :filters="{ process: process }"></bpmn-rights-table>
+                    <bpmn-issues v-show="tab === 'validation'" :process="process"></bpmn-issues>
+                </div>
+            </div>
+        </div>
     </div>
 {%- endblock -%}

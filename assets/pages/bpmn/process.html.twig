@@ -2,17 +2,16 @@
 
 {%- set page_show_title = true -%}
 {%- set page_title = process.name ?: process.processId -%}
+{#- The process is the whole of the page, edge to edge: its title, then its
+    diagram and its inspector standing apart on the page's ground. -#}
+{%- set page_zone_flush = true -%}
+{%- set page_zone_plain = true -%}
 
 {%- block page_body -%}
-    {%- if process.documentation -%}
-        <p class="lead">{{ process.documentation }}</p>
-    {%- endif -%}
-    {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-process', { process: process.processId }) }}
-
-    <h2>{{ '@page::section.rights' | trans }}</h2>
-    <p class="lead">{{ '@page::section.rights_description' | trans }}</p>
-    {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-rights-table', { filters: { process: process.processId } }) }}
-
-    <h2>{{ '@page::section.validation' | trans }}</h2>
-    {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-issues', { process: process.processId }) }}
+    <div class="page--fill">
+        {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-process', {
+            process: process.processId,
+            documentation: process.documentation,
+        }) }}
+    </div>
 {%- endblock -%}

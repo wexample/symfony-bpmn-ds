@@ -10,7 +10,7 @@
 {%- endblock -%}
 
 {%- block vue_body -%}
-    <div class="bpmn-diagram" :style="{ '--bpmn-diagram-height': height + 'px' }" :aria-busy="loading ? 'true' : 'false'">
+    <div class="bpmn-diagram" :class="{ 'bpmn-diagram--fill': fill }" :style="{ '--bpmn-diagram-height': height + 'px' }" :aria-busy="loading ? 'true' : 'false'">
         <p v-if="failed" class="fallback">[[ t('failed') ]]</p>
         <stage
                 v-else

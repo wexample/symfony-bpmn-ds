@@ -50,11 +50,9 @@
                     <bpmn-issues :process="process"></bpmn-issues>
                 </div>
             </div>
-            {#- Who may act: a table as wide as its columns, scrolling both ways. -#}
-            <div v-show="tab === 'actors'" class="zone zone--scrollable zone--scrollable--x">
-                <div class="zone--content">
-                    <bpmn-rights-table :filters="{ process: process }"></bpmn-rights-table>
-                </div>
+            {#- Who may act: the zone given to the table whole. -#}
+            <div v-show="tab === 'actors'" class="zone zone--table">
+                <bpmn-rights-table :filters="{ process: process }"></bpmn-rights-table>
             </div>
             <bpmn-path-walk
                     v-show="tab === 'paths'"

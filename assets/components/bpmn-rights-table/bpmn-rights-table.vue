@@ -13,7 +13,7 @@ export default {
 
   data() {
     return {
-      fill: true,
+      natural: true,
       pageLength: null,
       defaultSort: { key: 'laneName', direction: 'asc' }
     };

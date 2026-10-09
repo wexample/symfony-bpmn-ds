@@ -38,22 +38,30 @@
             <div class="zone zone--narrow">
                 <tab :items="tabs" :active-key="tab" fill compact @change="onTab"></tab>
             </div>
-            <div class="zone zone--scrollable">
+            {#- Each tool its own region under the tabs: most scroll whole, the
+                paths keep their bar above what scrolls. -#}
+            <div v-show="tab === 'description'" class="zone zone--scrollable">
                 <div class="zone--content stack--vertical">
-                    <template v-if="tab === 'description'">
-                        <p v-if="documentation">[[ documentation ]]</p>
-                        <h3>[[ t('step.title') ]]</h3>
-                        <properties v-if="picked" :items="pickedProperties" stacked></properties>
-                        <p v-else class="fallback">[[ t('step.none') ]]</p>
-                    </template>
-                    <bpmn-path-walk
-                            v-show="tab === 'paths'"
-                            :process="process"
-                            :lanes="lanes"
-                            @update:highlighted="(value) => highlighted = value"
-                    ></bpmn-path-walk>
-                    <bpmn-rights-table v-show="tab === 'actors'" :filters="{ process: process }"></bpmn-rights-table>
-                    <bpmn-issues v-show="tab === 'validation'" :process="process"></bpmn-issues>
+                    <p v-if="documentation">[[ documentation ]]</p>
+                    <h3>[[ t('step.title') ]]</h3>
+                    <properties v-if="picked" :items="pickedProperties" stacked></properties>
+                    <p v-else class="fallback">[[ t('step.none') ]]</p>
+                </div>
+            </div>
+            <bpmn-path-walk
+                    v-show="tab === 'paths'"
+                    :process="process"
+                    :lanes="lanes"
+                    @update:highlighted="(value) => highlighted = value"
+            ></bpmn-path-walk>
+            <div v-show="tab === 'actors'" class="zone zone--scrollable">
+                <div class="zone--content">
+                    <bpmn-rights-table :filters="{ process: process }"></bpmn-rights-table>
+                </div>
+            </div>
+            <div v-show="tab === 'validation'" class="zone zone--scrollable">
+                <div class="zone--content">
+                    <bpmn-issues :process="process"></bpmn-issues>
                 </div>
             </div>
         </div>

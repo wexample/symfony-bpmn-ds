@@ -11,11 +11,10 @@
 {%- endblock -%}
 
 {%- block vue_body -%}
-    <div class="bpmn-path-walk">
-        <p v-if="!loading && !paths.length" class="fallback">[[ t('none') ]]</p>
-
-        {#- The paths, one open at a time, as tabs; under them, the walk. -#}
-        <template v-else-if="paths.length">
+    {#- A column of regions: the paths and the steps in a bar that stays, the
+        walk under it scrolling on its own. -#}
+    <div class="zone zone--split zone--split--vertical bpmn-path-walk">
+        <div v-if="paths.length" class="zone zone--narrow">
             <tab :items="pathTabs" :active-key="current === null ? '' : String(current)" compact @change="(key) => pick(Number(key))"></tab>
             <div v-if="path" class="toolbar toolbar--compact">
                 <div class="toolbar--group">
@@ -25,11 +24,16 @@
                     <button type="button" class="toolbar--action" :aria-label="t('all')" :data-tooltip="t('all')" :disabled="isLast" @click="all" v-html="renderIcon('ph:bold/arrow-line-right')"></button>
                 </div>
             </div>
-        </template>
+        </div>
 
-        <template v-if="path">
-            <p v-if="!path.complete" class="text-secondary">[[ t('loop') ]]</p>
-            <timeline :items="items"></timeline>
-        </template>
+        <div class="zone zone--scrollable">
+            <div class="zone--content stack--vertical">
+                <p v-if="!loading && !paths.length" class="fallback">[[ t('none') ]]</p>
+                <template v-if="path">
+                    <p v-if="!path.complete" class="text-secondary">[[ t('loop') ]]</p>
+                    <timeline :items="items"></timeline>
+                </template>
+            </div>
+        </div>
     </div>
 {%- endblock -%}

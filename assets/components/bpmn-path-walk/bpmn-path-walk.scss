@@ -1,8 +1,2 @@
 @use '@wexample/symfony-design-system/css/shapes/toolbar';
 @use '@wexample/symfony-design-system/css/shapes/timeline';
-
-.bpmn-path-walk {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-}

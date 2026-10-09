@@ -31,12 +31,12 @@
         {#- The inspector, against the right edge: widened from its inner edge,
             what the process is, its paths, who acts, each tab kept alive
             while another is shown — a path walked stays walked. -#}
-        <div class="zone zone--narrow zone--size-7 zone--panel zone--split zone--split--vertical bpmn-process--aside"
+        <div class="zone zone--narrow zone--size-7 zone--panel zone--split zone--split--vertical zone--split--joined bpmn-process--aside"
              ref="aside"
              :data-zone-id="asideZone">
             <zone-resizer edge="start"></zone-resizer>
             <div class="zone zone--narrow">
-                <tab :items="tabs" :active-key="tab" fill compact @change="onTab"></tab>
+                <tab :items="tabs" :active-key="tab" fill @change="onTab"></tab>
             </div>
             {#- Each tool its own region under the tabs: the description
                 scrolls whole, the paths keep their bar against the tabs. -#}
@@ -56,7 +56,6 @@
             </div>
             <bpmn-path-walk
                     v-show="tab === 'paths'"
-                    class="zone--joined-start"
                     :process="process"
                     :lanes="lanes"
                     @update:highlighted="(value) => highlighted = value"

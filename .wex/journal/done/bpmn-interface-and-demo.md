@@ -1,6 +1,7 @@
 # BPMN : l'interface (-ds) et la démo (-demo)
 
 Opened: 2026-10-09
+Closed: 2026-10-09
 Author: agent:main
 For: agent design system
 
@@ -119,3 +120,7 @@ Ordre proposé :
   viennent de l'outil de traduction.
 - Installation dans MOJOE design system (`composer.json`, bundles, menu, migration
   pour le marquage du sujet démo) : rien n'y est encore installé pour BPMN.
+
+## Clos le 2026-10-09
+
+Interface et démo faites par l'agent design system, confirmé par le propriétaire.

@@ -15,9 +15,9 @@ const ELEMENT = 'WexampleSymfonyBpmnDsBundle.components.bpmn-diagram.bpmn-diagra
 const ASIDE_ZONE = 'bpmn.process.aside';
 
 // A process read as a workspace: its diagram the whole of the room, and on its
-// right an inspector the reader widens, in two tabs: what the process is —
-// the step pressed, who acts, what its validation says —, and its paths walked
-// on the diagram. The tab open is remembered.
+// right an inspector the reader widens, in tabs: what the process is — the
+// step pressed, what its validation says —, its paths walked on the diagram,
+// who may act at each task. The tab open is remembered.
 export default {
   template: '#vue-template-wexample-symfony-bpmn-ds-bundle-components-bpmn-process-bpmn-process',
 
@@ -44,13 +44,15 @@ export default {
   },
 
   data() {
+    const remembered = uiStateGet(this.app, 'ui.bpmn.process.tab', null);
+
     return {
       lanes: [],
       nodes: [],
       highlighted: [],
       selection: [],
-      // A tab remembered from before there were only two is the first one.
-      tab: uiStateGet(this.app, 'ui.bpmn.process.tab', 'description') === 'paths' ? 'paths' : 'description'
+      // A tab remembered that is no longer one is the first one.
+      tab: ['paths', 'actors'].includes(remembered) ? remembered : 'description'
     };
   },
 
@@ -58,7 +60,8 @@ export default {
     tabs() {
       return [
         { key: 'description', label: this.t('tab.description'), icon: 'ph:bold/info' },
-        { key: 'paths', label: this.t('tab.paths'), icon: 'ph:bold/path' }
+        { key: 'paths', label: this.t('tab.paths'), icon: 'ph:bold/path' },
+        { key: 'actors', label: this.t('tab.actors'), icon: 'ph:bold/users-three' }
       ];
     },
 

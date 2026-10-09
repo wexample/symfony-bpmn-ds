@@ -29,8 +29,8 @@
         </div>
 
         {#- The inspector, against the right edge: widened from its inner edge,
-            what the process is in one tab, its paths in the other, each kept
-            alive while the other is shown — a path walked stays walked. -#}
+            what the process is, its paths, who acts, each tab kept alive
+            while another is shown — a path walked stays walked. -#}
         <div class="zone zone--narrow zone--size-7 zone--panel zone--split zone--split--vertical bpmn-process--aside"
              ref="aside"
              :data-zone-id="asideZone">
@@ -46,10 +46,14 @@
                     <h3>[[ t('step.title') ]]</h3>
                     <properties v-if="picked" :items="pickedProperties" stacked></properties>
                     <p v-else class="fallback">[[ t('step.none') ]]</p>
-                    <h3>[[ t('actors') ]]</h3>
-                    <bpmn-rights-table :filters="{ process: process }"></bpmn-rights-table>
                     <h3>[[ t('validation') ]]</h3>
                     <bpmn-issues :process="process"></bpmn-issues>
+                </div>
+            </div>
+            {#- Who may act: a table as wide as its columns, scrolling both ways. -#}
+            <div v-show="tab === 'actors'" class="zone zone--scrollable zone--scrollable--x">
+                <div class="zone--content">
+                    <bpmn-rights-table :filters="{ process: process }"></bpmn-rights-table>
                 </div>
             </div>
             <bpmn-path-walk

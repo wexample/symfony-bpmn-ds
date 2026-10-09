@@ -8,6 +8,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Attribute\Route;
 use Wexample\SymfonyBpmn\Service\BpmnViewService;
 use Wexample\SymfonyBpmnDs\Traits\SymfonyBpmnDsBundleClassTrait;
+use Wexample\SymfonyHelpers\Controller\AbstractController;
 use Wexample\SymfonyHelpers\Helper\VariableHelper;
 use Wexample\SymfonyLoader\Controller\AbstractPagesController;
 
@@ -38,7 +39,7 @@ final class BpmnController extends AbstractPagesController
         return $this->renderPage(self::ROUTE_INDEX);
     }
 
-    #[Route(path: '{process}', name: self::ROUTE_PROCESS)]
+    #[Route(path: '{process}', name: self::ROUTE_PROCESS, options: AbstractController::ROUTE_OPTIONS_ONLY_EXPOSE)]
     public function process(
         string $process,
         BpmnViewService $view,

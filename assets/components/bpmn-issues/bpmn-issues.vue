@@ -1,6 +1,6 @@
 <script>
 import Message from '@wexample/symfony-design-system/components/message/message.vue';
-import AbstractEntityCollectionVueMixin from '@wexample/symfony-design-system/js/Vue/AbstractEntityCollectionVueMixin';
+import AbstractEntityManipulatorVueMixin from '@wexample/symfony-design-system/js/Vue/AbstractEntityManipulatorVueMixin';
 import BpmnIssue from '@wexample/symfony-bpmn/Entity/BpmnIssue';
 
 const T = 'WexampleSymfonyBpmnDsBundle.components.bpmn-issues.bpmn-issues::';
@@ -10,7 +10,7 @@ const T = 'WexampleSymfonyBpmnDsBundle.components.bpmn-issues.bpmn-issues::';
 export default {
   template: '#vue-template-wexample-symfony-bpmn-ds-bundle-components-bpmn-issues-bpmn-issues',
 
-  mixins: [AbstractEntityCollectionVueMixin],
+  mixins: [AbstractEntityManipulatorVueMixin],
 
   components: {
     Message
@@ -23,17 +23,28 @@ export default {
     }
   },
 
+  data() {
+    return {
+      issues: [],
+      loading: true
+    };
+  },
+
+  mounted() {
+    this.load();
+  },
+
   methods: {
+    async load() {
+      try {
+        this.issues = await this.getEntityRepository(BpmnIssue).fetchList({ query: { process: this.process } });
+      } finally {
+        this.loading = false;
+      }
+    },
+
     t(key) {
       return this.trans(`${T}${key}`);
-    },
-
-    getEntityClass() {
-      return BpmnIssue;
-    },
-
-    getEntitiesFetchParams() {
-      return { query: { process: this.process } };
     },
 
     messageType(issue) {

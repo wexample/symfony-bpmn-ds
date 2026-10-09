@@ -30,8 +30,7 @@ export default {
           key: 'name',
           label: t('column.name'),
           sortable: true,
-          route: 'bpmn_process',
-          params: (row) => ({ process: row.processId })
+          href: { route: 'bpmn_process', parameters: (row) => ({ process: row.processId }) }
         },
         { key: 'documentation', label: t('column.documentation'), cell: 'clamp', secondary: true },
         { key: 'laneCount', label: t('column.lanes'), align: 'right' },

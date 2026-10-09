@@ -11,8 +11,8 @@
 
 {%- block vue_body -%}
     <div class="bpmn-issues">
-        <message v-if="!isLoading && !entities.length" type="success" compact :title="t('valid')"></message>
-        <message v-for="issue in entities"
+        <message v-if="!loading && !issues.length" type="success" compact :title="t('valid')"></message>
+        <message v-for="issue in issues"
                  :key="issue.id"
                  :type="messageType(issue)"
                  compact

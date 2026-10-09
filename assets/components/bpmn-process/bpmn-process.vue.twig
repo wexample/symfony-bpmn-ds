@@ -22,7 +22,7 @@
             <bpmn-diagram
                     fill
                     :process="process"
-                    :highlighted="highlighted"
+                    :highlighted="tab === 'paths' ? highlighted : []"
                     @loaded="onLoaded"
                     @update:selection="(value) => selection = value"
             ></bpmn-diagram>

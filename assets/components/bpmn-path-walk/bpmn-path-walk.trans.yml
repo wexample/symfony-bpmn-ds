@@ -1,8 +1,5 @@
 en:
-  paths: Paths of the process
   path: Path %number%
-  straight: No choice on the way
-  pick: Pick a path to walk it, step by step, on the diagram.
   none: This process has no path from its start to an end.
   loop: This path comes back on itself; it is walked once round.
   chose: "Way taken: %choice%"
@@ -12,10 +9,7 @@ en:
   all: Whole path
 
 fr:
-  paths: Chemins du processus
   path: Chemin %number%
-  straight: Aucun choix en route
-  pick: Choisissez un chemin pour le parcourir, pas à pas, sur le diagramme.
   none: Ce processus n'a aucun chemin de son début à une fin.
   loop: Ce chemin revient sur lui-même ; il est parcouru une fois.
   chose: "Issue prise : %choice%"

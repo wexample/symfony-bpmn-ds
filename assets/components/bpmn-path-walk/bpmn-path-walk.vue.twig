@@ -1,6 +1,7 @@
 {%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
 
 {%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/tab') -}}
     {{- vue_require(render_pass, '@WexampleSymfonyDesignSystemBundle/components/timeline') -}}
 {%- endblock -%}
 
@@ -13,29 +14,19 @@
     <div class="bpmn-path-walk">
         <p v-if="!loading && !paths.length" class="fallback">[[ t('none') ]]</p>
 
-        {#- The paths, one pressed at a time: what each decides, on the pointer. -#}
-        <div v-else class="toolbar toolbar--wrap bpmn-path-walk--paths" role="group" :aria-label="t('paths')">
-            <div class="toolbar--group">
-                <button v-for="(path, position) in paths"
-                        :key="path.id"
-                        type="button"
-                        class="toolbar--action"
-                        :aria-pressed="current === position ? 'true' : 'false'"
-                        :data-tooltip="path.description || t('straight')"
-                        @click="pick(position)">
-                    <span class="button--icon" v-html="renderIcon(path.complete ? 'ph:bold/flag-checkered' : 'ph:bold/arrows-clockwise')"></span>
-                    <span>[[ pathTitle(path) ]]</span>
-                </button>
+        {#- The paths, one open at a time, as tabs; under them, the walk. -#}
+        <template v-else-if="paths.length">
+            <tab :items="pathTabs" :active-key="current === null ? '' : String(current)" compact @change="(key) => pick(Number(key))"></tab>
+            <div v-if="path" class="toolbar toolbar--compact">
+                <div class="toolbar--group">
+                    <button type="button" class="toolbar--action" :aria-label="t('previous')" :data-tooltip="t('previous')" :disabled="isFirst" @click="previous" v-html="renderIcon('ph:bold/caret-left')"></button>
+                    <span class="text-secondary">[[ t('step', { '%step%': step + 1, '%count%': path.steps.length }) ]]</span>
+                    <button type="button" class="toolbar--action" :aria-label="t('next')" :data-tooltip="t('next')" :disabled="isLast" @click="next" v-html="renderIcon('ph:bold/caret-right')"></button>
+                    <button type="button" class="toolbar--action" :aria-label="t('all')" :data-tooltip="t('all')" :disabled="isLast" @click="all" v-html="renderIcon('ph:bold/arrow-line-right')"></button>
+                </div>
             </div>
-            <div v-if="path" class="toolbar--group">
-                <button type="button" class="toolbar--action" :aria-label="t('previous')" :data-tooltip="t('previous')" :disabled="isFirst" @click="previous" v-html="renderIcon('ph:bold/caret-left')"></button>
-                <span class="text-secondary">[[ t('step', { '%step%': step + 1, '%count%': path.steps.length }) ]]</span>
-                <button type="button" class="toolbar--action" :aria-label="t('next')" :data-tooltip="t('next')" :disabled="isLast" @click="next" v-html="renderIcon('ph:bold/caret-right')"></button>
-                <button type="button" class="toolbar--action" :aria-label="t('all')" :data-tooltip="t('all')" :disabled="isLast" @click="all" v-html="renderIcon('ph:bold/arrow-line-right')"></button>
-            </div>
-        </div>
+        </template>
 
-        <p v-if="!path && paths.length" class="fallback">[[ t('pick') ]]</p>
         <template v-if="path">
             <p v-if="!path.complete" class="text-secondary">[[ t('loop') ]]</p>
             <timeline :items="items"></timeline>

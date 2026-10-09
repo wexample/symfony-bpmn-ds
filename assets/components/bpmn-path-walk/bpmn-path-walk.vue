@@ -1,4 +1,5 @@
 <script>
+import Tab from '@wexample/symfony-design-system/components/tab/tab.vue';
 import Timeline from '@wexample/symfony-design-system/components/timeline/timeline.vue';
 import AbstractEntityManipulatorVueMixin from '@wexample/symfony-design-system/js/Vue/AbstractEntityManipulatorVueMixin';
 import BpmnPath from '@wexample/symfony-bpmn/Entity/BpmnPath';
@@ -19,6 +20,7 @@ export default {
   mixins: [AbstractEntityManipulatorVueMixin],
 
   components: {
+    Tab,
     Timeline
   },
 
@@ -38,7 +40,8 @@ export default {
   data() {
     return {
       paths: [],
-      // The path walked, by its position, and how far: null for none.
+      // The path walked, by its position — the first once read —, and how
+      // far: null while there is none.
       current: null,
       step: 0,
       loading: true
@@ -46,6 +49,15 @@ export default {
   },
 
   computed: {
+    // A path that comes back on itself is told by its icon.
+    pathTabs() {
+      return this.paths.map((path, position) => ({
+        key: String(position),
+        label: this.pathTitle(path),
+        icon: path.complete ? 'ph:bold/flag-checkered' : 'ph:bold/arrows-clockwise'
+      }));
+    },
+
     path() {
       return this.current === null ? null : this.paths[this.current] ?? null;
     },
@@ -113,15 +125,15 @@ export default {
 
       try {
         this.paths = await this.getEntityRepository(BpmnPath).fetchList({ query: { process: this.process } });
-        this.current = null;
+        this.current = this.paths.length ? 0 : null;
+        this.step = 0;
       } finally {
         this.loading = false;
       }
     },
 
-    // Picked again, a path is put down: the diagram is whole again.
     pick(position) {
-      this.current = this.current === position ? null : position;
+      this.current = position;
       this.step = 0;
     },
 

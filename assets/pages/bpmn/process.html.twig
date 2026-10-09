@@ -1,17 +1,13 @@
 {%- extends '@front/layouts/private/layout.html.twig' -%}
 
-{%- set page_show_title = true -%}
 {%- set page_title = process.name ?: process.processId -%}
-{#- The process is the whole of the page, edge to edge: its title, then its
-    diagram and its inspector standing apart on the page's ground. -#}
-{%- set page_zone_flush = true -%}
-{%- set page_zone_plain = true -%}
+{#- The process is the page body: its zones are the diagram and the inspector
+    beside it, filling the window, the title in the bar above. -#}
+{%- set page_body_mode = 'wide' -%}
 
-{%- block page_body -%}
-    <div class="page--fill">
-        {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-process', {
-            process: process.processId,
-            documentation: process.documentation,
-        }) }}
-    </div>
+{%- block page_body_container -%}
+    {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-process', {
+        process: process.processId,
+        documentation: process.documentation,
+    }) }}
 {%- endblock -%}

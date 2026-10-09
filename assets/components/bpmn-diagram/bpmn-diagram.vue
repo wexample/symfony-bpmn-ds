@@ -16,7 +16,9 @@ const T = 'WexampleSymfonyBpmnDsBundle.components.bpmn-diagram.bpmn-diagram::';
 // repositories generated from them: the component is given the process's id
 // and nothing else. `highlighted` lights nodes and flows by their BPMN ids —
 // a path walked —, and a node pressed is handed back (`update:selection`).
-// It stands as tall as its lanes, or as what holds it (`fill`).
+// It stands as tall as its lanes, or as what holds it (`fill`): its lanes then
+// grow to its height when they are shorter, and it moves down as well as
+// sideways when they are taller — never past what it holds.
 export default {
   template: '#vue-template-wexample-symfony-bpmn-ds-bundle-components-bpmn-diagram-bpmn-diagram',
 
@@ -50,21 +52,53 @@ export default {
       nodes: [],
       flows: [],
       loading: true,
-      failed: false
+      failed: false,
+      viewHeight: 0
     };
   },
 
   computed: {
+    // The bands that hold nodes: the lanes no other lane is nested in, top
+    // first.
+    bands() {
+      const parents = new Set(this.lanes.map((lane) => lane.parentLaneId).filter(Boolean));
+
+      return this.lanes.filter((lane) => !parents.has(lane.laneId)).sort((a, b) => a.y - b.y);
+    },
+
+    // Filling a stage taller than the process, the room left under it is
+    // shared between the bands: each grows by as much, what it holds centred
+    // in it. Its routes too — those drawn under the lanes stay under them.
+    stretch() {
+      if (!this.fill || !this.viewHeight || !this.bands.length) {
+        return 0;
+      }
+
+      const routes = this.flows.flatMap((flow) => flow.points ?? []).map(([, y]) => y + 24);
+      const bottom = Math.max(this.height, ...routes);
+
+      return Math.max(0, this.viewHeight - bottom) / this.bands.length;
+    },
+
     regions() {
-      return this.lanes.map((lane) => ({
-        id: lane.laneId,
-        title: lane.name || lane.laneId,
-        kind: lane.depth > 0 ? 'nested' : null,
-        x: lane.x,
-        y: lane.y,
-        width: lane.width,
-        height: lane.height
-      }));
+      return this.lanes.map((lane) => {
+        const top = lane.y + this.edgeShift(lane.y);
+        // The bands at the foot run to the stage's: the routes drawn under
+        // the lanes are then inside the last one.
+        const bottom = this.stretch && lane.y + lane.height >= this.height
+          ? this.viewHeight
+          : lane.y + lane.height + this.edgeShift(lane.y + lane.height);
+
+        return {
+          id: lane.laneId,
+          title: lane.name || lane.laneId,
+          kind: lane.depth > 0 ? 'nested' : null,
+          x: lane.x,
+          y: top,
+          width: lane.width,
+          height: bottom - top
+        };
+      });
     },
 
     elements() {
@@ -76,7 +110,7 @@ export default {
         definitions: node.definitions ?? [],
         attached: Boolean(node.attachedTo),
         x: node.x,
-        y: node.y,
+        y: node.y + this.shift(node.y + node.height / 2),
         width: node.width,
         height: node.height
       }));
@@ -89,12 +123,11 @@ export default {
         to: flow.targetId,
         label: flow.name || flow.condition || null,
         kind: flow.isDefault ? 'default' : (flow.condition ? 'conditional' : null),
-        points: flow.points?.length ? flow.points : null
+        points: flow.points?.length ? flow.points.map(([x, y]) => [x, y + this.shift(y)]) : null
       }));
     },
 
-    // The bands are the whole height: the stage stands as tall as they do,
-    // and moves only sideways.
+    // How tall the lanes are, as laid out.
     height() {
       return this.lanes.reduce((bottom, lane) => Math.max(bottom, lane.y + lane.height), 0);
     }
@@ -108,6 +141,17 @@ export default {
 
   mounted() {
     this.load();
+
+    if (this.fill) {
+      this.observer = new ResizeObserver(([entry]) => {
+        this.viewHeight = entry.contentRect.height;
+      });
+      this.observer.observe(this.$el);
+    }
+  },
+
+  beforeUnmount() {
+    this.observer?.disconnect();
   },
 
   methods: {
@@ -137,6 +181,24 @@ export default {
       } finally {
         this.loading = false;
       }
+    },
+
+    // How far down what stands at `y` moves when the bands grow: by the growth
+    // of the bands above it, and half its own band's, to stay centred in it.
+    shift(y) {
+      const index = this.bands.findIndex((band) => y >= band.y && y < band.y + band.height);
+
+      if (index >= 0) {
+        return (index + 0.5) * this.stretch;
+      }
+
+      return y >= this.height ? this.bands.length * this.stretch : 0;
+    },
+
+    // How far down an edge of a band moves: by the growth of the bands that
+    // end at it or above.
+    edgeShift(y) {
+      return this.stretch * this.bands.filter((band) => band.y + band.height <= y + 0.5).length;
     },
 
     nodeIcon(element) {

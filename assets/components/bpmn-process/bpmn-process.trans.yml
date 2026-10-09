@@ -6,7 +6,7 @@ en:
     paths: Paths
   step:
     title: Step
-    none: Press a step of the diagram to read what it is. Drag the diagram sideways to follow it.
+    none: Press a step of the diagram to read what it is. Drag the diagram, or scroll it, to follow it.
     name: Name
     kind: Kind
     lane: Who acts
@@ -20,7 +20,7 @@ fr:
     paths: Chemins
   step:
     title: Étape
-    none: Cliquez sur une étape du diagramme pour savoir ce qu'elle est. Faites glisser le diagramme pour le suivre.
+    none: Cliquez sur une étape du diagramme pour savoir ce qu'elle est. Faites glisser ou défiler le diagramme pour le suivre.
     name: Nom
     kind: Nature
     lane: Qui agit

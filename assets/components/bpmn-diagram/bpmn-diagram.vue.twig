@@ -14,7 +14,7 @@
         <p v-if="failed" class="fallback">[[ t('failed') ]]</p>
         <stage
                 v-else
-                axis="x"
+                :axis="fill ? 'both' : 'x'"
                 readonly
                 bounded
                 :grid="0"

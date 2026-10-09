@@ -1,0 +1,50 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
+
+{%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyStageBundle/components/stage') -}}
+{%- endblock -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyBpmnDsBundle.components.bpmn-diagram.bpmn-diagram::*') }}
+{%- endblock -%}
+
+{%- block vue_body -%}
+    <div class="bpmn-diagram" :style="{ '--bpmn-diagram-height': height + 'px' }" :aria-busy="loading ? 'true' : 'false'">
+        <p v-if="failed" class="fallback">[[ t('failed') ]]</p>
+        <stage
+                v-else
+                axis="x"
+                readonly
+                :grid="0"
+                :label="t('label')"
+                :elements="elements"
+                :links="links"
+                :regions="regions"
+                :highlighted="highlighted"
+                @update:selection="(value) => $emit('update:selection', value)"
+        >
+            <template #element="{ element }">
+                {#- A task: a card, its kind in its corner, its name in the middle. -#}
+                <div v-if="element.kind === 'task' || element.kind === 'activity'"
+                     class="bpmn-node bpmn-node--task"
+                     :class="'bpmn-node--' + element.element"
+                     :title="nodeLabel(element)">
+                    <span v-if="nodeIcon(element)" class="bpmn-node--type" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
+                    <span class="bpmn-node--name">[[ element.title ]]</span>
+                </div>
+                {#- An event: a circle, its name under it; a gateway: a diamond,
+                    its question under it. -#}
+                <div v-else
+                     class="bpmn-node"
+                     :class="['bpmn-node--' + element.kind, 'bpmn-node--' + element.element, { 'bpmn-node--attached': element.attached }]"
+                     :title="nodeLabel(element)">
+                    <span class="bpmn-node--shape">
+                        <span v-if="nodeIcon(element)" class="bpmn-node--glyph" aria-hidden="true" v-html="renderIcon(nodeIcon(element))"></span>
+                    </span>
+                    <span v-if="element.title" class="bpmn-node--caption">[[ element.title ]]</span>
+                </div>
+            </template>
+        </stage>
+    </div>
+{%- endblock -%}

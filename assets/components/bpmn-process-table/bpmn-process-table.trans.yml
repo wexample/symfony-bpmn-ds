@@ -1,0 +1,23 @@
+en:
+  column:
+    name: Process
+    documentation: What it is
+    lanes: Actors
+    nodes: Steps
+    valid: Validation
+  status:
+    valid: Valid
+    warnings: Valid, with warnings
+    invalid: Invalid
+
+fr:
+  column:
+    name: Processus
+    documentation: Ce que c'est
+    lanes: Acteurs
+    nodes: Étapes
+    valid: Validation
+  status:
+    valid: Valide
+    warnings: Valide, avec avertissements
+    invalid: Invalide

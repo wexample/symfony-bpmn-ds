@@ -1,0 +1,19 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+{%- set page_trail = 'back' -%}
+{%- set page_title = process.name ?: process.processId -%}
+
+{%- block page_body -%}
+    {%- if process.documentation -%}
+        <p class="lead">{{ process.documentation }}</p>
+    {%- endif -%}
+    {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-process', { process: process.processId }) }}
+
+    <h2>{{ '@page::section.rights' | trans }}</h2>
+    <p class="lead">{{ '@page::section.rights_description' | trans }}</p>
+    {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-rights-table', { filters: { process: process.processId } }) }}
+
+    <h2>{{ '@page::section.validation' | trans }}</h2>
+    {{ vue(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-issues', { process: process.processId }) }}
+{%- endblock -%}

@@ -1,0 +1,47 @@
+en:
+  label: Process diagram
+  failed: The process could not be read.
+  element:
+    startEvent: start
+    endEvent: end
+    intermediateCatchEvent: waiting
+    intermediateThrowEvent: sending
+    boundaryEvent: interruption
+    userTask: task done by someone
+    manualTask: task done by hand
+    serviceTask: automatic task
+    sendTask: message sent
+    receiveTask: message awaited
+    scriptTask: script
+    businessRuleTask: business rule
+    exclusiveGateway: one way out of several
+    parallelGateway: every way at once
+    inclusiveGateway: one way or more
+    eventBasedGateway: the first event decides
+    complexGateway: complex choice
+    subProcess: sub-process
+    callActivity: call of another process
+
+fr:
+  label: Diagramme du processus
+  failed: Le processus n'a pas pu être lu.
+  element:
+    startEvent: début
+    endEvent: fin
+    intermediateCatchEvent: attente
+    intermediateThrowEvent: envoi
+    boundaryEvent: interruption
+    userTask: tâche faite par quelqu'un
+    manualTask: tâche faite à la main
+    serviceTask: tâche automatique
+    sendTask: message envoyé
+    receiveTask: message attendu
+    scriptTask: script
+    businessRuleTask: règle métier
+    exclusiveGateway: une seule issue parmi plusieurs
+    parallelGateway: toutes les issues à la fois
+    inclusiveGateway: une issue ou plusieurs
+    eventBasedGateway: le premier événement décide
+    complexGateway: choix complexe
+    subProcess: sous-processus
+    callActivity: appel d'un autre processus

@@ -1,0 +1,23 @@
+en:
+  column:
+    task: Task
+    lane: Lane
+    who: Who may act
+    interrupted: Interrupted by
+  who:
+    automatic: Nobody — done automatically
+    grant: "Team members granted: %grant%"
+    role: "Role: %role%"
+    anyone: Anyone who reads the process
+
+fr:
+  column:
+    task: Tâche
+    lane: Couloir
+    who: Qui peut agir
+    interrupted: Interrompue par
+  who:
+    automatic: Personne — faite automatiquement
+    grant: "Membres d'équipe ayant : %grant%"
+    role: "Rôle : %role%"
+    anyone: Quiconque lit le processus

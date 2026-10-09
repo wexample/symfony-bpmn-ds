@@ -1,0 +1,31 @@
+{%- extends '@WexampleSymfonyDesignSystemBundle/components/_abstract/vue/vue.vue.twig' -%}
+
+{%- block vue_require -%}
+    {{- vue_require(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-diagram') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyBpmnDsBundle/components/bpmn-path-walk') -}}
+{%- endblock -%}
+
+{%- block vue_config -%}
+    {{ parent() }}
+    {{ trans_js(render_pass, 'WexampleSymfonyBpmnDsBundle.components.bpmn-process.bpmn-process::*') }}
+{%- endblock -%}
+
+{%- block vue_body -%}
+    <div class="bpmn-process">
+        <div class="block block--card bpmn-process--diagram">
+            <bpmn-diagram
+                    :process="process"
+                    :highlighted="highlighted"
+                    @loaded="onLoaded"
+                    @update:selection="(value) => selection = value"
+            ></bpmn-diagram>
+            <div class="status-bar" aria-live="polite">[[ status ]]</div>
+        </div>
+
+        <bpmn-path-walk
+                :process="process"
+                :lanes="lanes"
+                @update:highlighted="(value) => highlighted = value"
+        ></bpmn-path-walk>
+    </div>
+{%- endblock -%}

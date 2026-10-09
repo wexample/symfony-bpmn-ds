@@ -7,6 +7,3 @@ services:
     Wexample\SymfonyBpmnDs\Controller\:
         resource: '../../Controller/'
         tags: ['controller.service_arguments']
-
-    Wexample\SymfonyBpmnDs\Twig\:
-        resource: '../../Twig/'

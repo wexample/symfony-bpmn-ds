@@ -1,0 +1,15 @@
+en:
+  page_title: Processes
+  page_icon: ph:bold/flow-arrow
+  intro: >-
+    The rules of the platform, each a process: who acts (the lanes), what an
+    action sets off (messages, timers), where the way forks. Open one to read
+    it, and walk its paths step by step.
+
+fr:
+  page_title: Processus
+  page_icon: ph:bold/flow-arrow
+  intro: >-
+    Les règles de la plateforme, chacune un processus : qui agit (les
+    couloirs), ce qu'une action déclenche (messages, délais), où le chemin se
+    divise. Ouvrez-en un pour le lire, et parcourir ses chemins pas à pas.

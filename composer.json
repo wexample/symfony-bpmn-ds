@@ -7,5 +7,43 @@
     "psr-4": {
       "Wexample\\SymfonyBpmnDs\\": "src/"
     }
+  },
+  "description": "The interface of symfony-bpmn: a process drawn, walked, its rights and its validation",
+  "autoload-dev": {
+    "psr-4": {
+      "Wexample\\SymfonyBpmnDs\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "weeger",
+      "email": "romain.weeger@wexample.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.5",
+    "wexample/symfony-helpers": ">=15.0.0",
+    "wexample/symfony-loader": ">=22.0.0",
+    "wexample/symfony-design-system": ">=32.0.0",
+    "wexample/symfony-api": ">=12.0.0",
+    "wexample/symfony-bpmn": ">=1.0.1",
+    "wexample/symfony-stage": ">=1.0.116"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^13"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "extra": {
+    "install": {
+      "bundle_env": "all"
+    }
   }
 }

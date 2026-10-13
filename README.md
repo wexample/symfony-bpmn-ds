@@ -1,6 +1,6 @@
 # symfony-bpmn-ds
 
-Version: 2.0.0
+Version: 2.0.1
 
 The interface of symfony-bpmn: a process drawn, walked, its rights and its validation
 
@@ -28,7 +28,7 @@ Visit the [Wexample Suite documentation](https://docs.wexample.com) for the comp
 - php: >=8.5
 - wexample/symfony-helpers: >=16.0.0
 - wexample/symfony-loader: >=23.0.0
-- wexample/symfony-design-system: >=34.0.0
+- wexample/symfony-design-system: >=35.0.0
 - wexample/symfony-api: >=13.0.0
 - wexample/symfony-bpmn: >=2.0.0
 - wexample/symfony-stage: >=2.0.0

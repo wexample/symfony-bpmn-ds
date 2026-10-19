@@ -1,0 +1,522 @@
+{
+    "components/bpmn-diagram/bpmn-diagram.ar.yml": {
+        "element.boundaryEvent": {
+            "hash": "669fcb1d4a345780b0b58bea2fb61a14",
+            "engine": "syrtis"
+        },
+        "element.businessRuleTask": {
+            "hash": "f13d544bdc391b2d3b75b0d98449bcc9",
+            "engine": "syrtis"
+        },
+        "element.callActivity": {
+            "hash": "9c81269dcdf1e6e9e3c7e44cc4cda1a8",
+            "engine": "syrtis"
+        },
+        "element.complexGateway": {
+            "hash": "e397cd3e2f7557a4c3661d3d9a433807",
+            "engine": "syrtis"
+        },
+        "element.endEvent": {
+            "hash": "154c38bb88c2de91f66d8cc5d275f416",
+            "engine": "syrtis"
+        },
+        "element.eventBasedGateway": {
+            "hash": "dec6870fba7710ebce15394e9eea489a",
+            "engine": "syrtis"
+        },
+        "element.exclusiveGateway": {
+            "hash": "1feed51219be3b39506482cf77ef7c10",
+            "engine": "syrtis"
+        },
+        "element.inclusiveGateway": {
+            "hash": "274c8285ef66c5ddf760fbd801b23883",
+            "engine": "syrtis"
+        },
+        "element.intermediateCatchEvent": {
+            "hash": "caa7da8a16695f4eadcda2181c40b776",
+            "engine": "syrtis"
+        },
+        "element.intermediateThrowEvent": {
+            "hash": "bc3a438a187379910b104f63845bd67a",
+            "engine": "syrtis"
+        },
+        "element.manualTask": {
+            "hash": "77b22fb8bccb4488d8f4cd80254b7972",
+            "engine": "syrtis"
+        },
+        "element.parallelGateway": {
+            "hash": "7e73867628a5a54a7f3e4ac52c9e3188",
+            "engine": "syrtis"
+        },
+        "element.receiveTask": {
+            "hash": "83dd8130765351efc682fd5aa1ec35c5",
+            "engine": "syrtis"
+        },
+        "element.scriptTask": {
+            "hash": "50588b862a43acc4f159e11efc3aa1aa",
+            "engine": "syrtis"
+        },
+        "element.sendTask": {
+            "hash": "005b7b5f2223106c82cf9961be998421",
+            "engine": "syrtis"
+        },
+        "element.serviceTask": {
+            "hash": "267971d887c98e2610812ddc86c3717c",
+            "engine": "syrtis"
+        },
+        "element.startEvent": {
+            "hash": "864adbf2b08448f4206e3ad5e4f49977",
+            "engine": "syrtis"
+        },
+        "element.subProcess": {
+            "hash": "0ffe5b0c1b1ecc391a5c4ff5b7549f47",
+            "engine": "syrtis"
+        },
+        "element.userTask": {
+            "hash": "e82380fa3a0434acb8380169e814e120",
+            "engine": "syrtis"
+        },
+        "failed": {
+            "hash": "7954b3b61e8766174173d49e978e3883",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "f8a285e4df1affbcb12a1d63e8dd65d0",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-diagram/bpmn-diagram.zh.yml": {
+        "element.boundaryEvent": {
+            "hash": "669fcb1d4a345780b0b58bea2fb61a14",
+            "engine": "syrtis"
+        },
+        "element.businessRuleTask": {
+            "hash": "f13d544bdc391b2d3b75b0d98449bcc9",
+            "engine": "syrtis"
+        },
+        "element.callActivity": {
+            "hash": "9c81269dcdf1e6e9e3c7e44cc4cda1a8",
+            "engine": "syrtis"
+        },
+        "element.complexGateway": {
+            "hash": "e397cd3e2f7557a4c3661d3d9a433807",
+            "engine": "syrtis"
+        },
+        "element.endEvent": {
+            "hash": "154c38bb88c2de91f66d8cc5d275f416",
+            "engine": "syrtis"
+        },
+        "element.eventBasedGateway": {
+            "hash": "dec6870fba7710ebce15394e9eea489a",
+            "engine": "syrtis"
+        },
+        "element.exclusiveGateway": {
+            "hash": "1feed51219be3b39506482cf77ef7c10",
+            "engine": "syrtis"
+        },
+        "element.inclusiveGateway": {
+            "hash": "274c8285ef66c5ddf760fbd801b23883",
+            "engine": "syrtis"
+        },
+        "element.intermediateCatchEvent": {
+            "hash": "caa7da8a16695f4eadcda2181c40b776",
+            "engine": "syrtis"
+        },
+        "element.intermediateThrowEvent": {
+            "hash": "bc3a438a187379910b104f63845bd67a",
+            "engine": "syrtis"
+        },
+        "element.manualTask": {
+            "hash": "77b22fb8bccb4488d8f4cd80254b7972",
+            "engine": "syrtis"
+        },
+        "element.parallelGateway": {
+            "hash": "7e73867628a5a54a7f3e4ac52c9e3188",
+            "engine": "syrtis"
+        },
+        "element.receiveTask": {
+            "hash": "83dd8130765351efc682fd5aa1ec35c5",
+            "engine": "syrtis"
+        },
+        "element.scriptTask": {
+            "hash": "50588b862a43acc4f159e11efc3aa1aa",
+            "engine": "syrtis"
+        },
+        "element.sendTask": {
+            "hash": "005b7b5f2223106c82cf9961be998421",
+            "engine": "syrtis"
+        },
+        "element.serviceTask": {
+            "hash": "267971d887c98e2610812ddc86c3717c",
+            "engine": "syrtis"
+        },
+        "element.startEvent": {
+            "hash": "864adbf2b08448f4206e3ad5e4f49977",
+            "engine": "syrtis"
+        },
+        "element.subProcess": {
+            "hash": "0ffe5b0c1b1ecc391a5c4ff5b7549f47",
+            "engine": "syrtis"
+        },
+        "element.userTask": {
+            "hash": "e82380fa3a0434acb8380169e814e120",
+            "engine": "syrtis"
+        },
+        "failed": {
+            "hash": "7954b3b61e8766174173d49e978e3883",
+            "engine": "syrtis"
+        },
+        "label": {
+            "hash": "f8a285e4df1affbcb12a1d63e8dd65d0",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-issues/bpmn-issues.ar.yml": {
+        "valid": {
+            "hash": "2d1b608921d9feb557b085f41b1efff8",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-issues/bpmn-issues.zh.yml": {
+        "valid": {
+            "hash": "2d1b608921d9feb557b085f41b1efff8",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-path-walk/bpmn-path-walk.ar.yml": {
+        "all": {
+            "hash": "ecd00c013fcc0e8d197b0ce81ddd6ed5",
+            "engine": "syrtis"
+        },
+        "chose": {
+            "hash": "2e33913bb90086d6376338d52fefc016",
+            "engine": "syrtis"
+        },
+        "loop": {
+            "hash": "31f02d8b5ca4aeeca2318fe3fd6d195e",
+            "engine": "syrtis"
+        },
+        "next": {
+            "hash": "3c9ddaa66a33379e7aa20b0f88f93909",
+            "engine": "syrtis"
+        },
+        "none": {
+            "hash": "c18ff2008c8212822fcb1ff723d6dacc",
+            "engine": "syrtis"
+        },
+        "path": {
+            "hash": "cdaeac4615e4d0c4664e1fbfc38dc73a",
+            "engine": "syrtis"
+        },
+        "previous": {
+            "hash": "2201ca2c95f669f0c436911eac2c7e4d",
+            "engine": "syrtis"
+        },
+        "step": {
+            "hash": "9a3fa36e7ba05f72778b8d78e5d588e9",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-path-walk/bpmn-path-walk.zh.yml": {
+        "all": {
+            "hash": "ecd00c013fcc0e8d197b0ce81ddd6ed5",
+            "engine": "syrtis"
+        },
+        "chose": {
+            "hash": "2e33913bb90086d6376338d52fefc016",
+            "engine": "syrtis"
+        },
+        "loop": {
+            "hash": "31f02d8b5ca4aeeca2318fe3fd6d195e",
+            "engine": "syrtis"
+        },
+        "next": {
+            "hash": "3c9ddaa66a33379e7aa20b0f88f93909",
+            "engine": "syrtis"
+        },
+        "none": {
+            "hash": "c18ff2008c8212822fcb1ff723d6dacc",
+            "engine": "syrtis"
+        },
+        "path": {
+            "hash": "cdaeac4615e4d0c4664e1fbfc38dc73a",
+            "engine": "syrtis"
+        },
+        "previous": {
+            "hash": "2201ca2c95f669f0c436911eac2c7e4d",
+            "engine": "syrtis"
+        },
+        "step": {
+            "hash": "9a3fa36e7ba05f72778b8d78e5d588e9",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-process-table/bpmn-process-table.ar.yml": {
+        "column.documentation": {
+            "hash": "af13c13f74da7e5bd8b88c3c163e679d",
+            "engine": "syrtis"
+        },
+        "column.lanes": {
+            "hash": "56452ca88bb96fd9c1f9f3b7150a332f",
+            "engine": "syrtis"
+        },
+        "column.name": {
+            "hash": "f3bb8e7e4511808bd8e65b045c66ec1e",
+            "engine": "syrtis"
+        },
+        "column.nodes": {
+            "hash": "00e102db8db51bb42ff55d07e25e98dc",
+            "engine": "syrtis"
+        },
+        "column.valid": {
+            "hash": "2bc0ed6aa6026efef8cb3cd6ad321e82",
+            "engine": "syrtis"
+        },
+        "status.invalid": {
+            "hash": "6d230dfdec0409c7bdec0230fbd80301",
+            "engine": "syrtis"
+        },
+        "status.valid": {
+            "hash": "dbca8e985d8e57db59c2a159cc926317",
+            "engine": "syrtis"
+        },
+        "status.warnings": {
+            "hash": "8659d8c25a5806d2aa13d96fc25c1181",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-process-table/bpmn-process-table.zh.yml": {
+        "column.documentation": {
+            "hash": "af13c13f74da7e5bd8b88c3c163e679d",
+            "engine": "syrtis"
+        },
+        "column.lanes": {
+            "hash": "56452ca88bb96fd9c1f9f3b7150a332f",
+            "engine": "syrtis"
+        },
+        "column.name": {
+            "hash": "f3bb8e7e4511808bd8e65b045c66ec1e",
+            "engine": "syrtis"
+        },
+        "column.nodes": {
+            "hash": "00e102db8db51bb42ff55d07e25e98dc",
+            "engine": "syrtis"
+        },
+        "column.valid": {
+            "hash": "2bc0ed6aa6026efef8cb3cd6ad321e82",
+            "engine": "syrtis"
+        },
+        "status.invalid": {
+            "hash": "6d230dfdec0409c7bdec0230fbd80301",
+            "engine": "syrtis"
+        },
+        "status.valid": {
+            "hash": "dbca8e985d8e57db59c2a159cc926317",
+            "engine": "syrtis"
+        },
+        "status.warnings": {
+            "hash": "8659d8c25a5806d2aa13d96fc25c1181",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-process/bpmn-process.ar.yml": {
+        "step.documentation": {
+            "hash": "389caeca9d54ceef6747dc514859ed9d",
+            "engine": "syrtis"
+        },
+        "step.kind": {
+            "hash": "4ed1e412bc146ed4864eb07045d2de0f",
+            "engine": "syrtis"
+        },
+        "step.lane": {
+            "hash": "7440cc27de0b1857873ad23967953952",
+            "engine": "syrtis"
+        },
+        "step.name": {
+            "hash": "c1b31e28e8682ebb63815f5281a83b0b",
+            "engine": "syrtis"
+        },
+        "step.none": {
+            "hash": "4e6dcaa24ce4f704328936484d5dac4e",
+            "engine": "syrtis"
+        },
+        "step.title": {
+            "hash": "77ef97ffaea40ebd83b6a193c65441bb",
+            "engine": "syrtis"
+        },
+        "tab.actors": {
+            "hash": "56452ca88bb96fd9c1f9f3b7150a332f",
+            "engine": "syrtis"
+        },
+        "tab.description": {
+            "hash": "34c9958e5d2180ef0358a8dc6280bcb7",
+            "engine": "syrtis"
+        },
+        "tab.paths": {
+            "hash": "3d0a6ec7794cc0d8fc39327e13c375cf",
+            "engine": "syrtis"
+        },
+        "validation": {
+            "hash": "2bc0ed6aa6026efef8cb3cd6ad321e82",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-process/bpmn-process.zh.yml": {
+        "step.documentation": {
+            "hash": "389caeca9d54ceef6747dc514859ed9d",
+            "engine": "syrtis"
+        },
+        "step.kind": {
+            "hash": "4ed1e412bc146ed4864eb07045d2de0f",
+            "engine": "syrtis"
+        },
+        "step.lane": {
+            "hash": "7440cc27de0b1857873ad23967953952",
+            "engine": "syrtis"
+        },
+        "step.name": {
+            "hash": "c1b31e28e8682ebb63815f5281a83b0b",
+            "engine": "syrtis"
+        },
+        "step.none": {
+            "hash": "4e6dcaa24ce4f704328936484d5dac4e",
+            "engine": "syrtis"
+        },
+        "step.title": {
+            "hash": "77ef97ffaea40ebd83b6a193c65441bb",
+            "engine": "syrtis"
+        },
+        "tab.actors": {
+            "hash": "56452ca88bb96fd9c1f9f3b7150a332f",
+            "engine": "syrtis"
+        },
+        "tab.description": {
+            "hash": "34c9958e5d2180ef0358a8dc6280bcb7",
+            "engine": "syrtis"
+        },
+        "tab.paths": {
+            "hash": "3d0a6ec7794cc0d8fc39327e13c375cf",
+            "engine": "syrtis"
+        },
+        "validation": {
+            "hash": "2bc0ed6aa6026efef8cb3cd6ad321e82",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-rights-table/bpmn-rights-table.ar.yml": {
+        "column.interrupted": {
+            "hash": "122b7987ea35f2068b46dfed2a7f886a",
+            "engine": "syrtis"
+        },
+        "column.lane": {
+            "hash": "741df4ed042920104f51848ad1b1876d",
+            "engine": "syrtis"
+        },
+        "column.task": {
+            "hash": "9852839cefaff1a905851d88cf142345",
+            "engine": "syrtis"
+        },
+        "column.who": {
+            "hash": "59c0768b6b1e9871a8b3805154348cc4",
+            "engine": "syrtis"
+        },
+        "who.anyone": {
+            "hash": "86db9dd5d51da01e4c51caef14db4305",
+            "engine": "syrtis"
+        },
+        "who.automatic": {
+            "hash": "f80e1b4345b316f3c20690bb47c6feff",
+            "engine": "syrtis"
+        },
+        "who.grant": {
+            "hash": "42ce8fbe68bb46e4c646ad97616ab6b4",
+            "engine": "syrtis"
+        },
+        "who.role": {
+            "hash": "859c6ef52944764afa6681437b5efa22",
+            "engine": "syrtis"
+        }
+    },
+    "components/bpmn-rights-table/bpmn-rights-table.zh.yml": {
+        "column.interrupted": {
+            "hash": "122b7987ea35f2068b46dfed2a7f886a",
+            "engine": "syrtis"
+        },
+        "column.lane": {
+            "hash": "741df4ed042920104f51848ad1b1876d",
+            "engine": "syrtis"
+        },
+        "column.task": {
+            "hash": "9852839cefaff1a905851d88cf142345",
+            "engine": "syrtis"
+        },
+        "column.who": {
+            "hash": "59c0768b6b1e9871a8b3805154348cc4",
+            "engine": "syrtis"
+        },
+        "who.anyone": {
+            "hash": "86db9dd5d51da01e4c51caef14db4305",
+            "engine": "syrtis"
+        },
+        "who.automatic": {
+            "hash": "f80e1b4345b316f3c20690bb47c6feff",
+            "engine": "syrtis"
+        },
+        "who.grant": {
+            "hash": "42ce8fbe68bb46e4c646ad97616ab6b4",
+            "engine": "syrtis"
+        },
+        "who.role": {
+            "hash": "859c6ef52944764afa6681437b5efa22",
+            "engine": "syrtis"
+        }
+    },
+    "pages/bpmn/index.ar.yml": {
+        "intro": {
+            "hash": "df589f9825dbd2f44f3adad40fa2a33a",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "d346fb5ea2442285436c6491989757e6",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "00a5c4d108b92b62cad7aa228c117373",
+            "engine": "syrtis"
+        }
+    },
+    "pages/bpmn/index.zh.yml": {
+        "intro": {
+            "hash": "df589f9825dbd2f44f3adad40fa2a33a",
+            "engine": "syrtis"
+        },
+        "page_icon": {
+            "hash": "d346fb5ea2442285436c6491989757e6",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "00a5c4d108b92b62cad7aa228c117373",
+            "engine": "syrtis"
+        }
+    },
+    "pages/bpmn/process.ar.yml": {
+        "page_icon": {
+            "hash": "d346fb5ea2442285436c6491989757e6",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "f3bb8e7e4511808bd8e65b045c66ec1e",
+            "engine": "syrtis"
+        }
+    },
+    "pages/bpmn/process.zh.yml": {
+        "page_icon": {
+            "hash": "d346fb5ea2442285436c6491989757e6",
+            "engine": "syrtis"
+        },
+        "page_title": {
+            "hash": "f3bb8e7e4511808bd8e65b045c66ec1e",
+            "engine": "syrtis"
+        }
+    }
+}

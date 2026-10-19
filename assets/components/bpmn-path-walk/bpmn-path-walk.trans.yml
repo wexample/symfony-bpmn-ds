@@ -17,3 +17,23 @@ fr:
   previous: Étape précédente
   next: Étape suivante
   all: Chemin entier
+
+zh:
+  path: '路径 %number%'
+  none: 该过程从开始到结束没有路径。
+  loop: 该路径返回到自身；走了一圈。
+  chose: 选择的路径：%choice%
+  step: '第 %step% 步，共 %count% 步'
+  previous: 上一步
+  next: 下一步
+  all: 完整路径
+
+ar:
+  path: 'المسار %number%'
+  none: 'لا يوجد مسار لهذه العملية من بدايتها إلى نهايتها.'
+  loop: 'هذا المسار يعود على نفسه؛ يتم السير عليه مرة واحدة.'
+  chose: 'الطريق المتخذ: %choice%'
+  step: 'الخطوة %step% من %count%'
+  previous: 'الخطوة السابقة'
+  next: 'الخطوة التالية'
+  all: 'المسار بالكامل'

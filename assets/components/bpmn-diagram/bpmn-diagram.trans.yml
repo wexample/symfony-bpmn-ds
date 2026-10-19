@@ -45,3 +45,51 @@ fr:
     complexGateway: choix complexe
     subProcess: sous-processus
     callActivity: appel d'un autre processus
+
+zh:
+  label: 流程图
+  failed: 无法读取该流程。
+  element:
+    startEvent: 开始
+    endEvent: 结束
+    intermediateCatchEvent: 等待中
+    intermediateThrowEvent: 发送中
+    boundaryEvent: 中断
+    userTask: 由某人完成的任务
+    manualTask: 手动完成的任务
+    serviceTask: 自动任务
+    sendTask: 消息已发送
+    receiveTask: 等待消息
+    scriptTask: 脚本
+    businessRuleTask: 业务规则
+    exclusiveGateway: 多个出口中的一个
+    parallelGateway: 同时所有出口
+    inclusiveGateway: 一个或多个出口
+    eventBasedGateway: 第一个事件决定
+    complexGateway: 复杂选择
+    subProcess: 子流程
+    callActivity: 调用另一个流程
+
+ar:
+  label: 'رسم عملية'
+  failed: 'لم يمكن قراءة العملية.'
+  element:
+    startEvent: بداية
+    endEvent: نهاية
+    intermediateCatchEvent: انتظار
+    intermediateThrowEvent: إرسال
+    boundaryEvent: انقطاع
+    userTask: 'مهمة يقوم بها شخص ما'
+    manualTask: 'مهمة يدوية'
+    serviceTask: 'مهمة تلقائية'
+    sendTask: 'تم إرسال الرسالة'
+    receiveTask: 'في انتظار الرسالة'
+    scriptTask: سكريبت
+    businessRuleTask: 'قاعدة العمل'
+    exclusiveGateway: 'مخرج واحد من عدة مخارج'
+    parallelGateway: 'كل الطرق في آن واحد'
+    inclusiveGateway: 'طريقة واحدة أو أكثر'
+    eventBasedGateway: 'الحدث الأول يحدد'
+    complexGateway: 'اختيار معقد'
+    subProcess: 'عملية فرعية'
+    callActivity: 'استدعاء عملية أخرى'

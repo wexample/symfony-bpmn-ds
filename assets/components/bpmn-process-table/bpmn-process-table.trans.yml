@@ -21,3 +21,27 @@ fr:
     valid: Valide
     warnings: Valide, avec avertissements
     invalid: Invalide
+
+zh:
+  column:
+    name: 流程
+    documentation: 它是什么
+    lanes: 参与者
+    nodes: 步骤
+    valid: 有效
+  status:
+    valid: 有效
+    warnings: 有效，但有警告
+    invalid: 无效
+
+ar:
+  column:
+    name: العملية
+    documentation: 'ما هو'
+    lanes: الممثلون
+    nodes: الخطوات
+    valid: التحقق
+  status:
+    valid: صالح
+    warnings: 'صالح، مع تحذيرات'
+    invalid: 'غير صالح'

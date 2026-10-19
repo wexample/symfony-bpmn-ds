@@ -5,3 +5,11 @@ en:
 fr:
   page_title: Processus
   page_icon: ph:bold/flow-arrow
+
+zh:
+  page_title: 处理
+  page_icon: 'ph:bold/flow-arrow'
+
+ar:
+  page_title: معالجة
+  page_icon: 'ph:bold/flow-arrow'

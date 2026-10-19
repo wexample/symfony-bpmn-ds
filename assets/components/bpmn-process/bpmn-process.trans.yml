@@ -25,3 +25,31 @@ fr:
     kind: Nature
     lane: Qui agit
     documentation: Documentation
+
+zh:
+  validation: 验证
+  tab:
+    description: 描述
+    paths: 路径
+    actors: 参与者
+  step:
+    title: 步骤
+    none: 点击图表中的一个步骤以查看其内容。拖动图表或滚动以查看。
+    name: 名称
+    kind: 类型
+    lane: 谁在执行
+    documentation: 文档
+
+ar:
+  validation: التحقق
+  tab:
+    description: الوصف
+    paths: المسارات
+    actors: 'الجهات الفاعلة'
+  step:
+    title: الخطوة
+    none: 'اضغط على خطوة من المخطط لقراءة ما هي. اسحب المخطط، أو قم بالتمرير، لمتابعته.'
+    name: الاسم
+    kind: النوع
+    lane: 'من يقوم بالعمل'
+    documentation: التوثيق

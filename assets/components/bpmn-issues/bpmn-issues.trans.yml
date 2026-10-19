@@ -3,3 +3,9 @@ en:
 
 fr:
   valid: Le processus est valide, et tout ce qui est dessiné est exécuté.
+
+zh:
+  valid: 该过程有效，所有绘制的内容都已运行。
+
+ar:
+  valid: 'العملية صالحة، وكل ما تم رسمه يعمل.'

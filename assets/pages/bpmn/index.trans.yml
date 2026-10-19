@@ -13,3 +13,13 @@ fr:
     Les règles de la plateforme, chacune un processus : qui agit (les
     couloirs), ce qu'une action déclenche (messages, délais), où le chemin se
     divise. Ouvrez-en un pour le lire, et parcourir ses chemins pas à pas.
+
+zh:
+  page_title: 流程
+  page_icon: 'ph:bold/flow-arrow'
+  intro: 平台的规则，每个都是一个流程：谁行动（参与者），一个动作引发什么（消息、计时器），路径分叉的地方。打开一个来阅读它，并一步一步走过它的路径。
+
+ar:
+  page_title: العمليات
+  page_icon: 'ph:bold/flow-arrow'
+  intro: 'قواعد المنصة، كل منها عملية: من يتصرف (المسارات)، ماذا يحدث عند اتخاذ إجراء (رسائل، مؤقتات)، أين تتفرع الطريق. افتح واحدة لقراءتها، وامشِ في مساراتها خطوة بخطوة.'

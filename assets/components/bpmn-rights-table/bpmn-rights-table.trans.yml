@@ -21,3 +21,27 @@ fr:
     grant: "Membres d'équipe ayant : %grant%"
     role: "Rôle : %role%"
     anyone: Quiconque lit le processus
+
+zh:
+  column:
+    task: 任务
+    lane: 通道
+    who: 谁可以执行
+    interrupted: 被打断者
+  who:
+    automatic: '无人 - 自动完成'
+    grant: '已授权的团队成员: %grant%'
+    role: '角色: %role%'
+    anyone: 任何阅读该流程的人
+
+ar:
+  column:
+    task: المهمة
+    lane: المسار
+    who: 'من يمكنه التنفيذ'
+    interrupted: 'تم إيقافه بواسطة'
+  who:
+    automatic: 'لا أحد - تم تلقائيًا'
+    grant: 'أعضاء الفريق الممنوح لهم: %grant%'
+    role: 'الدور: %role%'
+    anyone: 'أي شخص يقرأ العملية'

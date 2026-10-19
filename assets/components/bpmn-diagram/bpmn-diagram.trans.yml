@@ -93,3 +93,459 @@ ar:
     complexGateway: 'اختيار معقد'
     subProcess: 'عملية فرعية'
     callActivity: 'استدعاء عملية أخرى'
+
+hi:
+  label: 'प्रक्रिया आरेख'
+  failed: 'प्रक्रिया को पढ़ा नहीं जा सका।'
+  element:
+    startEvent: शुरुआत
+    endEvent: समापन
+    intermediateCatchEvent: इंतज़ार
+    intermediateThrowEvent: भेजना
+    boundaryEvent: व्यवधान
+    userTask: 'किसी द्वारा किया गया कार्य'
+    manualTask: 'हाथ से किया गया कार्य'
+    serviceTask: 'स्वचालित कार्य'
+    sendTask: 'संदेश भेजा गया'
+    receiveTask: 'संदेश की प्रतीक्षा'
+    scriptTask: स्क्रिप्ट
+    businessRuleTask: 'व्यापार नियम'
+    exclusiveGateway: 'कई में से एक रास्ता'
+    parallelGateway: 'एक साथ सभी रास्ते'
+    inclusiveGateway: 'एक या अधिक रास्ते'
+    eventBasedGateway: 'पहला घटना निर्णय लेता है'
+    complexGateway: 'जटिल चयन'
+    subProcess: उप-प्रक्रिया
+    callActivity: 'दूसरी प्रक्रिया का कॉल'
+
+he:
+  label: 'דיאגרמת תהליך'
+  failed: 'לא ניתן לקרוא את התהליך.'
+  element:
+    startEvent: התחלה
+    endEvent: סוף
+    intermediateCatchEvent: מחכה
+    intermediateThrowEvent: שולח
+    boundaryEvent: הפסקה
+    userTask: 'משימה שבוצעה על ידי מישהו'
+    manualTask: 'משימה שבוצעה ידנית'
+    serviceTask: 'משימה אוטומטית'
+    sendTask: 'הודעה נשלחה'
+    receiveTask: 'הודעה ממתינה'
+    scriptTask: סקריפט
+    businessRuleTask: 'כלל עסקי'
+    exclusiveGateway: 'יציאה אחת מתוך כמה'
+    parallelGateway: 'כל הכיוונים בבת אחת'
+    inclusiveGateway: 'כיוון אחד או יותר'
+    eventBasedGateway: 'האירוע הראשון קובע'
+    complexGateway: 'בחירה מורכבת'
+    subProcess: 'תהליך משנה'
+    callActivity: 'קריאה לתהליך אחר'
+
+fa:
+  label: 'نمودار فرآیند'
+  failed: 'نمی‌توان فرآیند را خواند.'
+  element:
+    startEvent: شروع
+    endEvent: پایان
+    intermediateCatchEvent: 'در حال انتظار'
+    intermediateThrowEvent: 'در حال ارسال'
+    boundaryEvent: وقفه
+    userTask: 'کار انجام شده توسط شخصی'
+    manualTask: 'کار انجام شده به صورت دستی'
+    serviceTask: 'کار خودکار'
+    sendTask: 'پیام ارسال شد'
+    receiveTask: 'پیام در انتظار'
+    scriptTask: اسکریپت
+    businessRuleTask: 'قانون کسب و کار'
+    exclusiveGateway: 'یک خروجی از چندین خروجی'
+    parallelGateway: 'هر مسیر به طور همزمان'
+    inclusiveGateway: 'یک یا چند مسیر'
+    eventBasedGateway: 'اولین رویداد تصمیم می‌گیرد'
+    complexGateway: 'انتخاب پیچیده'
+    subProcess: 'زیر فرآیند'
+    callActivity: 'فراخوانی یک فرآیند دیگر'
+
+ur:
+  label: 'پروسیس کا خاکہ'
+  failed: 'پروسیس کو پڑھا نہیں جا سکا۔'
+  element:
+    startEvent: شروع
+    endEvent: ختم
+    intermediateCatchEvent: انتظار
+    intermediateThrowEvent: بھیجنا
+    boundaryEvent: رکاوٹ
+    userTask: 'کسی اور کے ذریعہ کیا گیا کام'
+    manualTask: 'ہاتھ سے کیا گیا کام'
+    serviceTask: 'خودکار کام'
+    sendTask: 'پیغام بھیجا گیا'
+    receiveTask: 'پیغام کا انتظار'
+    scriptTask: اسکرپٹ
+    businessRuleTask: 'کاروباری قاعدہ'
+    exclusiveGateway: 'چند میں سے ایک راستہ'
+    parallelGateway: 'ایک ہی وقت میں ہر راستہ'
+    inclusiveGateway: 'ایک یا زیادہ راستے'
+    eventBasedGateway: 'پہلا واقعہ فیصلہ کرتا ہے'
+    complexGateway: 'پیچیدہ انتخاب'
+    subProcess: 'ذیلی پروسیس'
+    callActivity: 'دوسرے پروسیس کا کال'
+
+ja:
+  label: プロセス図
+  failed: プロセスを読み込めませんでした。
+  element:
+    startEvent: 開始
+    endEvent: 終了
+    intermediateCatchEvent: 待機中
+    intermediateThrowEvent: 送信中
+    boundaryEvent: 中断
+    userTask: 他の人によるタスク
+    manualTask: 手作業のタスク
+    serviceTask: 自動タスク
+    sendTask: メッセージ送信
+    receiveTask: メッセージ待機
+    scriptTask: スクリプト
+    businessRuleTask: ビジネスルール
+    exclusiveGateway: 複数のうちの1つの出口
+    parallelGateway: すべての経路を同時に
+    inclusiveGateway: 1つまたはそれ以上の出口
+    eventBasedGateway: 最初のイベントが決定する
+    complexGateway: 複雑な選択
+    subProcess: サブプロセス
+    callActivity: 他のプロセスの呼び出し
+
+ko:
+  label: '프로세스 다이어그램'
+  failed: '프로세스를 읽을 수 없습니다.'
+  element:
+    startEvent: 시작
+    endEvent: 종료
+    intermediateCatchEvent: '대기 중'
+    intermediateThrowEvent: '전송 중'
+    boundaryEvent: 중단
+    userTask: '누군가가 수행한 작업'
+    manualTask: '수작업으로 수행한 작업'
+    serviceTask: '자동 작업'
+    sendTask: '메시지 전송'
+    receiveTask: '메시지 대기'
+    scriptTask: 스크립트
+    businessRuleTask: '비즈니스 규칙'
+    exclusiveGateway: '여러 경로 중 하나'
+    parallelGateway: '모든 경로 동시'
+    inclusiveGateway: '하나 이상의 경로'
+    eventBasedGateway: '첫 번째 이벤트가 결정'
+    complexGateway: '복합 선택'
+    subProcess: '서브 프로세스'
+    callActivity: '다른 프로세스 호출'
+
+bn:
+  label: 'প্রক্রিয়া ডায়াগ্রাম'
+  failed: 'প্রক্রিয়াটি পড়া যায়নি।'
+  element:
+    startEvent: শুরু
+    endEvent: শেষ
+    intermediateCatchEvent: অপেক্ষমাণ
+    intermediateThrowEvent: পাঠানো
+    boundaryEvent: বাধা
+    userTask: 'কেউ সম্পন্ন করা কাজ'
+    manualTask: 'হাতে সম্পন্ন করা কাজ'
+    serviceTask: 'স্বয়ংক্রিয় কাজ'
+    sendTask: 'বার্তা পাঠানো'
+    receiveTask: 'বার্তার অপেক্ষা'
+    scriptTask: স্ক্রিপ্ট
+    businessRuleTask: 'ব্যবসায়িক নিয়ম'
+    exclusiveGateway: 'একটির মধ্যে এক'
+    parallelGateway: 'একসাথে সব দিক'
+    inclusiveGateway: 'একটি বা তার বেশি দিক'
+    eventBasedGateway: 'প্রথম ঘটনা সিদ্ধান্ত নেয়'
+    complexGateway: 'জটিল পছন্দ'
+    subProcess: উপ-প্রক্রিয়া
+    callActivity: 'আরেকটি প্রক্রিয়ার কল'
+
+th:
+  label: แผนภาพกระบวนการ
+  failed: ไม่สามารถอ่านกระบวนการได้
+  element:
+    startEvent: เริ่มต้น
+    endEvent: สิ้นสุด
+    intermediateCatchEvent: รอคอย
+    intermediateThrowEvent: กำลังส่ง
+    boundaryEvent: การหยุดชะงัก
+    userTask: งานที่ทำโดยใครสักคน
+    manualTask: งานที่ทำด้วยมือ
+    serviceTask: งานอัตโนมัติ
+    sendTask: ส่งข้อความ
+    receiveTask: รอรับข้อความ
+    scriptTask: สคริปต์
+    businessRuleTask: กฎธุรกิจ
+    exclusiveGateway: ทางออกหนึ่งในหลายทาง
+    parallelGateway: ทุกทางพร้อมกัน
+    inclusiveGateway: ทางหนึ่งหรือมากกว่า
+    eventBasedGateway: เหตุการณ์แรกตัดสินใจ
+    complexGateway: การเลือกที่ซับซ้อน
+    subProcess: กระบวนการย่อย
+    callActivity: เรียกใช้งานจากกระบวนการอื่น
+
+de:
+  label: Prozessdiagramm
+  failed: 'Der Prozess konnte nicht gelesen werden.'
+  element:
+    startEvent: Start
+    endEvent: Ende
+    intermediateCatchEvent: Warten
+    intermediateThrowEvent: Versenden
+    boundaryEvent: Unterbrechung
+    userTask: 'Aufgabe, die von jemandem erledigt wird'
+    manualTask: 'Aufgabe, die von Hand erledigt wird'
+    serviceTask: 'Automatische Aufgabe'
+    sendTask: 'Nachricht gesendet'
+    receiveTask: 'Nachricht erwartet'
+    scriptTask: Skript
+    businessRuleTask: Geschäftsregel
+    exclusiveGateway: 'ein Weg von mehreren'
+    parallelGateway: 'alle Wege gleichzeitig'
+    inclusiveGateway: 'ein oder mehrere Wege'
+    eventBasedGateway: 'das erste Ereignis entscheidet'
+    complexGateway: 'komplexe Wahl'
+    subProcess: Unterprozess
+    callActivity: 'Aufruf eines anderen Prozesses'
+
+fi:
+  label: Prosessikaavio
+  failed: 'Prosessia ei voitu lukea.'
+  element:
+    startEvent: alku
+    endEvent: loppu
+    intermediateCatchEvent: odottaa
+    intermediateThrowEvent: lähettää
+    boundaryEvent: keskeytys
+    userTask: 'tehtävä jonkun tekemänä'
+    manualTask: 'tehtävä käsin tehtynä'
+    serviceTask: 'automaattinen tehtävä'
+    sendTask: 'viesti lähetetty'
+    receiveTask: 'viesti odotettavissa'
+    scriptTask: skripti
+    businessRuleTask: liiketoimintasääntö
+    exclusiveGateway: 'yksi ulospääsy useista'
+    parallelGateway: 'kaikki ulospääsy samanaikaisesti'
+    inclusiveGateway: 'yksi tai useampi ulospääsy'
+    eventBasedGateway: 'ensimmäinen tapahtuma päättää'
+    complexGateway: 'monimutkainen valinta'
+    subProcess: ali-prosessi
+    callActivity: 'toisen prosessin kutsuminen'
+
+ru:
+  label: 'Диаграмма процесса'
+  failed: 'Процесс не удалось прочитать.'
+  element:
+    startEvent: начало
+    endEvent: конец
+    intermediateCatchEvent: ожидание
+    intermediateThrowEvent: отправка
+    boundaryEvent: прерывание
+    userTask: 'задача, выполненная кем-то'
+    manualTask: 'задача, выполненная вручную'
+    serviceTask: 'автоматическая задача'
+    sendTask: 'сообщение отправлено'
+    receiveTask: 'сообщение ожидается'
+    scriptTask: скрипт
+    businessRuleTask: 'дело правило'
+    exclusiveGateway: 'один выход из нескольких'
+    parallelGateway: 'каждый выход одновременно'
+    inclusiveGateway: 'один или несколько выходов'
+    eventBasedGateway: 'первое событие решает'
+    complexGateway: 'сложный выбор'
+    subProcess: подпроцесс
+    callActivity: 'вызов другого процесса'
+
+pl:
+  label: 'Diagram procesu'
+  failed: 'Proces nie mógł zostać odczytany.'
+  element:
+    startEvent: start
+    endEvent: koniec
+    intermediateCatchEvent: czekanie
+    intermediateThrowEvent: wysyłanie
+    boundaryEvent: przerwanie
+    userTask: 'zadanie wykonane przez kogoś'
+    manualTask: 'zadanie wykonane ręcznie'
+    serviceTask: 'zadanie automatyczne'
+    sendTask: 'wiadomość wysłana'
+    receiveTask: 'wiadomość oczekiwana'
+    scriptTask: skrypt
+    businessRuleTask: 'reguła biznesowa'
+    exclusiveGateway: 'jedna droga z kilku'
+    parallelGateway: 'wszystkie drogi jednocześnie'
+    inclusiveGateway: 'jedna lub więcej dróg'
+    eventBasedGateway: 'pierwsze zdarzenie decyduje'
+    complexGateway: 'złożony wybór'
+    subProcess: podproces
+    callActivity: 'wywołanie innego procesu'
+
+es:
+  label: 'Diagrama de proceso'
+  failed: 'No se pudo leer el proceso.'
+  element:
+    startEvent: inicio
+    endEvent: fin
+    intermediateCatchEvent: esperando
+    intermediateThrowEvent: enviando
+    boundaryEvent: interrupción
+    userTask: 'tarea realizada por alguien'
+    manualTask: 'tarea realizada a mano'
+    serviceTask: 'tarea automática'
+    sendTask: 'mensaje enviado'
+    receiveTask: 'mensaje esperado'
+    scriptTask: script
+    businessRuleTask: 'regla de negocio'
+    exclusiveGateway: 'una salida de varias'
+    parallelGateway: 'todas las salidas a la vez'
+    inclusiveGateway: 'una salida o más'
+    eventBasedGateway: 'el primer evento decide'
+    complexGateway: 'elección compleja'
+    subProcess: subproceso
+    callActivity: 'llamada a otro proceso'
+
+it:
+  label: 'Diagramma di processo'
+  failed: 'Il processo non può essere letto.'
+  element:
+    startEvent: inizio
+    endEvent: fine
+    intermediateCatchEvent: 'in attesa'
+    intermediateThrowEvent: invio
+    boundaryEvent: interruzione
+    userTask: 'compito svolto da qualcuno'
+    manualTask: 'compito svolto a mano'
+    serviceTask: 'compito automatico'
+    sendTask: 'messaggio inviato'
+    receiveTask: 'messaggio atteso'
+    scriptTask: script
+    businessRuleTask: 'regola di business'
+    exclusiveGateway: "un'uscita tra diverse"
+    parallelGateway: 'tutte le uscite contemporaneamente'
+    inclusiveGateway: 'una o più uscite'
+    eventBasedGateway: 'il primo evento decide'
+    complexGateway: 'scelta complessa'
+    subProcess: sottoprocesso
+    callActivity: 'chiamata di un altro processo'
+
+pt_BR:
+  label: 'Diagrama de processo'
+  failed: 'O processo não pôde ser lido.'
+  element:
+    startEvent: início
+    endEvent: fim
+    intermediateCatchEvent: aguardando
+    intermediateThrowEvent: enviando
+    boundaryEvent: interrupção
+    userTask: 'tarefa feita por alguém'
+    manualTask: 'tarefa feita manualmente'
+    serviceTask: 'tarefa automática'
+    sendTask: 'mensagem enviada'
+    receiveTask: 'mensagem aguardada'
+    scriptTask: script
+    businessRuleTask: 'regra de negócio'
+    exclusiveGateway: 'uma saída entre várias'
+    parallelGateway: 'todas as saídas ao mesmo tempo'
+    inclusiveGateway: 'uma saída ou mais'
+    eventBasedGateway: 'o primeiro evento decide'
+    complexGateway: 'escolha complexa'
+    subProcess: subprocesso
+    callActivity: 'chamada de outro processo'
+
+tr:
+  label: 'Süreç diyagramı'
+  failed: 'Süreç okunamadı.'
+  element:
+    startEvent: başlangıç
+    endEvent: bitiş
+    intermediateCatchEvent: bekleme
+    intermediateThrowEvent: gönderme
+    boundaryEvent: kesinti
+    userTask: 'birisi tarafından yapılan görev'
+    manualTask: 'elle yapılan görev'
+    serviceTask: 'otomatik görev'
+    sendTask: 'mesaj gönderildi'
+    receiveTask: 'mesaj bekleniyor'
+    scriptTask: script
+    businessRuleTask: 'iş kuralı'
+    exclusiveGateway: 'birden fazla yoldan tek yön'
+    parallelGateway: 'her yol aynı anda'
+    inclusiveGateway: 'bir veya daha fazla yol'
+    eventBasedGateway: 'ilk olay karar verir'
+    complexGateway: 'karmaşık seçim'
+    subProcess: 'alt süreç'
+    callActivity: 'başka bir sürecin çağrısı'
+
+vi:
+  label: 'Sơ đồ quy trình'
+  failed: 'Quy trình không thể được đọc.'
+  element:
+    startEvent: 'bắt đầu'
+    endEvent: 'kết thúc'
+    intermediateCatchEvent: 'đang chờ'
+    intermediateThrowEvent: 'đang gửi'
+    boundaryEvent: 'gián đoạn'
+    userTask: 'nhiệm vụ do ai đó thực hiện'
+    manualTask: 'nhiệm vụ thực hiện bằng tay'
+    serviceTask: 'nhiệm vụ tự động'
+    sendTask: 'tin nhắn đã gửi'
+    receiveTask: 'tin nhắn đang chờ'
+    scriptTask: 'kịch bản'
+    businessRuleTask: 'quy tắc kinh doanh'
+    exclusiveGateway: 'một lối ra trong nhiều lối ra'
+    parallelGateway: 'mỗi lối đi một lúc'
+    inclusiveGateway: 'một hoặc nhiều lối ra'
+    eventBasedGateway: 'sự kiện đầu tiên quyết định'
+    complexGateway: 'lựa chọn phức tạp'
+    subProcess: 'tiểu quy trình'
+    callActivity: 'gọi quy trình khác'
+
+id:
+  label: 'Diagram Proses'
+  failed: 'Proses tidak dapat dibaca.'
+  element:
+    startEvent: awal
+    endEvent: akhir
+    intermediateCatchEvent: menunggu
+    intermediateThrowEvent: mengirim
+    boundaryEvent: interupsi
+    userTask: 'tugas yang dilakukan oleh seseorang'
+    manualTask: 'tugas yang dilakukan secara manual'
+    serviceTask: 'tugas otomatis'
+    sendTask: 'pesan terkirim'
+    receiveTask: 'pesan ditunggu'
+    scriptTask: skrip
+    businessRuleTask: 'aturan bisnis'
+    exclusiveGateway: 'satu jalan dari beberapa'
+    parallelGateway: 'setiap jalan sekaligus'
+    inclusiveGateway: 'satu jalan atau lebih'
+    eventBasedGateway: 'peristiwa pertama menentukan'
+    complexGateway: 'pilihan kompleks'
+    subProcess: sub-proses
+    callActivity: 'panggilan proses lain'
+
+nl:
+  label: Procesdiagram
+  failed: 'Het proces kon niet worden gelezen.'
+  element:
+    startEvent: start
+    endEvent: einde
+    intermediateCatchEvent: wachten
+    intermediateThrowEvent: verzenden
+    boundaryEvent: onderbreking
+    userTask: 'taak uitgevoerd door iemand'
+    manualTask: 'taak met de hand uitgevoerd'
+    serviceTask: 'automatische taak'
+    sendTask: 'bericht verzonden'
+    receiveTask: 'bericht verwacht'
+    scriptTask: script
+    businessRuleTask: bedrijfsregel
+    exclusiveGateway: 'één uit meerdere opties'
+    parallelGateway: 'alle wegen tegelijk'
+    inclusiveGateway: 'één of meer opties'
+    eventBasedGateway: 'de eerste gebeurtenis beslist'
+    complexGateway: 'complexe keuze'
+    subProcess: sub-proces
+    callActivity: 'oproep van een ander proces'

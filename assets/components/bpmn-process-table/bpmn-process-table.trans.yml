@@ -45,3 +45,231 @@ ar:
     valid: صالح
     warnings: 'صالح، مع تحذيرات'
     invalid: 'غير صالح'
+
+hi:
+  column:
+    name: प्रक्रिया
+    documentation: 'यह क्या है'
+    lanes: अभिनेताएँ
+    nodes: चरण
+    valid: मान्यता
+  status:
+    valid: मान्य
+    warnings: 'मान्य, चेतावनियों के साथ'
+    invalid: अमान्य
+
+he:
+  column:
+    name: תהליך
+    documentation: 'מה זה'
+    lanes: שחקנים
+    nodes: שלבים
+    valid: אימות
+  status:
+    valid: תקף
+    warnings: 'תקף, עם אזהרות'
+    invalid: 'לא תקף'
+
+fa:
+  column:
+    name: فرایند
+    documentation: 'این چیست'
+    lanes: بازیگران
+    nodes: مراحل
+    valid: اعتبارسنجی
+  status:
+    valid: معتبر
+    warnings: 'معتبر، با هشدارها'
+    invalid: نامعتبر
+
+ur:
+  column:
+    name: عمل
+    documentation: 'یہ کیا ہے'
+    lanes: اداکار
+    nodes: اقدامات
+    valid: تصدیق
+  status:
+    valid: درست
+    warnings: 'درست، مگر انتباہات کے ساتھ'
+    invalid: غلط
+
+ja:
+  column:
+    name: プロセス
+    documentation: 内容
+    lanes: アクター
+    nodes: ステップ
+    valid: 有効
+  status:
+    valid: 有効
+    warnings: 有効ですが、警告あり
+    invalid: 無効
+
+ko:
+  column:
+    name: 프로세스
+    documentation: 설명
+    lanes: 액터
+    nodes: 단계
+    valid: '유효성 검사'
+  status:
+    valid: 유효함
+    warnings: '유효하지만 경고가 있음'
+    invalid: '유효하지 않음'
+
+bn:
+  column:
+    name: প্রক্রিয়া
+    documentation: 'এটি কী'
+    lanes: অভিনেতাগণ
+    nodes: ধাপগুলি
+    valid: যাচাইকৃত
+  status:
+    valid: যাচাইকৃত
+    warnings: 'যাচাইকৃত, সতর্কতা সহ'
+    invalid: 'যাচাইকৃত নয়'
+
+th:
+  column:
+    name: กระบวนการ
+    documentation: สิ่งที่มันคือ
+    lanes: ผู้แสดง
+    nodes: ขั้นตอน
+    valid: การตรวจสอบความถูกต้อง
+  status:
+    valid: ถูกต้อง
+    warnings: 'ถูกต้อง, พร้อมคำเตือน'
+    invalid: ไม่ถูกต้อง
+
+de:
+  column:
+    name: Prozess
+    documentation: 'Was es ist'
+    lanes: Akteure
+    nodes: Schritte
+    valid: Validierung
+  status:
+    valid: Gültig
+    warnings: 'Gültig, mit Warnungen'
+    invalid: Ungültig
+
+fi:
+  column:
+    name: Prosessi
+    documentation: 'Mikä se on'
+    lanes: Toimijat
+    nodes: Vaiheet
+    valid: Vahvistus
+  status:
+    valid: Voimassa
+    warnings: 'Voimassa, varoituksilla'
+    invalid: Epäkelpo
+
+ru:
+  column:
+    name: Процесс
+    documentation: 'Что это такое'
+    lanes: Участники
+    nodes: Этапы
+    valid: Подтверждено
+  status:
+    valid: Действительно
+    warnings: 'Действительно, с предупреждениями'
+    invalid: Недействительно
+
+pl:
+  column:
+    name: Proces
+    documentation: 'Co to jest'
+    lanes: Aktorzy
+    nodes: Kroki
+    valid: Walidacja
+  status:
+    valid: Prawidłowy
+    warnings: 'Prawidłowy, z ostrzeżeniami'
+    invalid: Nieprawidłowy
+
+es:
+  column:
+    name: Proceso
+    documentation: 'Qué es'
+    lanes: Actores
+    nodes: Pasos
+    valid: Validación
+  status:
+    valid: Válido
+    warnings: 'Válido, con advertencias'
+    invalid: Inválido
+
+it:
+  column:
+    name: Processo
+    documentation: "Cos'è"
+    lanes: Attori
+    nodes: Passaggi
+    valid: Validazione
+  status:
+    valid: Valido
+    warnings: 'Valido, con avvisi'
+    invalid: 'Non valido'
+
+pt_BR:
+  column:
+    name: Processo
+    documentation: 'O que é'
+    lanes: Atores
+    nodes: Etapas
+    valid: Validação
+  status:
+    valid: Válido
+    warnings: 'Válido, com avisos'
+    invalid: Inválido
+
+tr:
+  column:
+    name: İşlem
+    documentation: Nedir
+    lanes: Aktörler
+    nodes: Adımlar
+    valid: Geçerli
+  status:
+    valid: Geçerli
+    warnings: 'Geçerli, uyarılarla birlikte'
+    invalid: Geçersiz
+
+vi:
+  column:
+    name: 'Quá trình'
+    documentation: 'Nó là gì'
+    lanes: 'Diễn viên'
+    nodes: 'Các bước'
+    valid: 'Xác thực'
+  status:
+    valid: 'Hợp lệ'
+    warnings: 'Hợp lệ, có cảnh báo'
+    invalid: 'Không hợp lệ'
+
+id:
+  column:
+    name: Proses
+    documentation: 'Apa itu'
+    lanes: Aktor
+    nodes: Langkah
+    valid: Validasi
+  status:
+    valid: Valid
+    warnings: 'Valid, dengan peringatan'
+    invalid: 'Tidak valid'
+
+nl:
+  column:
+    name: Proces
+    documentation: 'Wat het is'
+    lanes: Acteurs
+    nodes: Stappen
+    valid: Validatie
+  status:
+    valid: Geldig
+    warnings: 'Geldig, met waarschuwingen'
+    invalid: Ongeldig

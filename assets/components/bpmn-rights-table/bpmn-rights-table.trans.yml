@@ -45,3 +45,231 @@ ar:
     grant: 'أعضاء الفريق الممنوح لهم: %grant%'
     role: 'الدور: %role%'
     anyone: 'أي شخص يقرأ العملية'
+
+hi:
+  column:
+    task: कार्य
+    lane: लेन
+    who: 'कौन कार्य कर सकता है'
+    interrupted: 'द्वारा बाधित'
+  who:
+    automatic: 'कोई नहीं — स्वचालित रूप से किया गया'
+    grant: 'टीम के सदस्यों को अनुमति दी गई: %grant%'
+    role: 'भूमिका: %role%'
+    anyone: 'कोई भी जो प्रक्रिया पढ़ता है'
+
+he:
+  column:
+    task: משימה
+    lane: מסלול
+    who: 'מי יכול לפעול'
+    interrupted: 'מופרע על ידי'
+  who:
+    automatic: 'אף אחד — נעשה אוטומטית'
+    grant: 'חברי הצוות שקיבלו הרשאה: %grant%'
+    role: 'תפקיד: %role%'
+    anyone: 'כל אחד שקורא את התהליך'
+
+fa:
+  column:
+    task: وظیفه
+    lane: مسیر
+    who: 'چه کسی می‌تواند عمل کند'
+    interrupted: توسط
+  who:
+    automatic: 'هیچ‌کس — به‌طور خودکار انجام شد'
+    grant: 'اعضای تیم مجاز: %grant%'
+    role: 'نقش: %role%'
+    anyone: 'هر کسی که فرآیند را می‌خواند'
+
+ur:
+  column:
+    task: کام
+    lane: راستہ
+    who: 'کون عمل کر سکتا ہے'
+    interrupted: 'کی طرف سے روکا گیا'
+  who:
+    automatic: 'کسی نے نہیں — خود بخود مکمل ہوا'
+    grant: 'ٹیم کے ارکان کو دیا گیا: %grant%'
+    role: 'کردار: %role%'
+    anyone: 'کوئی بھی جو پروسیس کو پڑھتا ہے'
+
+ja:
+  column:
+    task: タスク
+    lane: レーン
+    who: 行動可能な人
+    interrupted: 中断者
+  who:
+    automatic: '誰も — 自動的に完了'
+    grant: '許可されたチームメンバー: %grant%'
+    role: '役割: %role%'
+    anyone: プロセスを読む誰でも
+
+ko:
+  column:
+    task: 작업
+    lane: 레인
+    who: '행동할 수 있는 사람'
+    interrupted: '중단된 사람'
+  who:
+    automatic: '아무도 — 자동으로 완료됨'
+    grant: '부여된 팀원: %grant%'
+    role: '역할: %role%'
+    anyone: '프로세스를 읽는 누구나'
+
+bn:
+  column:
+    task: কাজ
+    lane: লেন
+    who: 'কারা কাজ করতে পারে'
+    interrupted: 'বাধাহীন হয়েছে'
+  who:
+    automatic: 'কেউ না — স্বয়ংক্রিয়ভাবে সম্পন্ন হয়েছে'
+    grant: 'দলীয় সদস্যদের অনুমোদিত: %grant%'
+    role: 'ভূমিকা: %role%'
+    anyone: 'যে কেউ প্রক্রিয়া পড়ে'
+
+th:
+  column:
+    task: งาน
+    lane: เลน
+    who: ผู้ที่สามารถดำเนินการ
+    interrupted: ถูกขัดจังหวะโดย
+  who:
+    automatic: 'ไม่มีใคร — ทำโดยอัตโนมัติ'
+    grant: 'สมาชิกทีมที่ได้รับสิทธิ: %grant%'
+    role: 'บทบาท: %role%'
+    anyone: ใครก็ตามที่อ่านกระบวนการ
+
+de:
+  column:
+    task: Aufgabe
+    lane: Spalte
+    who: 'Wer kann handeln'
+    interrupted: 'Unterbrochen durch'
+  who:
+    automatic: 'Niemand – automatisch erledigt'
+    grant: 'Teammitglieder genehmigt: %grant%'
+    role: 'Rolle: %role%'
+    anyone: 'Jeder, der den Prozess liest'
+
+fi:
+  column:
+    task: Tehtävä
+    lane: Kaista
+    who: 'Kuka voi toimia'
+    interrupted: Keskeyttäjä
+  who:
+    automatic: 'Kukaan — suoritetaan automaattisesti'
+    grant: 'Tiimin jäsenet, joille on annettu oikeudet: %grant%'
+    role: 'Rooli: %role%'
+    anyone: 'Kuka tahansa, joka lukee prosessin'
+
+ru:
+  column:
+    task: Задача
+    lane: Полоса
+    who: 'Кто может действовать'
+    interrupted: Прервано
+  who:
+    automatic: 'Никто — сделано автоматически'
+    grant: 'Члены команды, получившие доступ: %grant%'
+    role: 'Роль: %role%'
+    anyone: 'Любой, кто читает процесс'
+
+pl:
+  column:
+    task: Zadanie
+    lane: Pas
+    who: 'Kto może działać'
+    interrupted: 'Przerwane przez'
+  who:
+    automatic: 'Nikt — zrealizowane automatycznie'
+    grant: 'Członkowie zespołu, którzy mają przyznane uprawnienia: %grant%'
+    role: 'Rola: %role%'
+    anyone: 'Każdy, kto zna proces'
+
+es:
+  column:
+    task: Tarea
+    lane: Carril
+    who: 'Quién puede actuar'
+    interrupted: 'Interrumpido por'
+  who:
+    automatic: 'Nadie — hecho automáticamente'
+    grant: 'Miembros del equipo concedidos: %grant%'
+    role: 'Rol: %role%'
+    anyone: 'Cualquiera que lea el proceso'
+
+it:
+  column:
+    task: Compito
+    lane: Corsia
+    who: 'Chi può agire'
+    interrupted: 'Interrotto da'
+  who:
+    automatic: 'Nessuno — eseguito automaticamente'
+    grant: 'Membri del team autorizzati: %grant%'
+    role: 'Ruolo: %role%'
+    anyone: 'Chiunque legga il processo'
+
+pt_BR:
+  column:
+    task: Tarefa
+    lane: Faixa
+    who: 'Quem pode agir'
+    interrupted: 'Interrompido por'
+  who:
+    automatic: 'Ninguém — feito automaticamente'
+    grant: 'Membros da equipe autorizados: %grant%'
+    role: 'Função: %role%'
+    anyone: 'Qualquer um que leia o processo'
+
+tr:
+  column:
+    task: Görev
+    lane: Şerit
+    who: 'Kim hareket edebilir'
+    interrupted: 'Tarafından kesildi'
+  who:
+    automatic: 'Kimse — otomatik olarak yapıldı'
+    grant: 'Verilen takım üyeleri: %grant%'
+    role: 'Rol: %role%'
+    anyone: 'Süreci okuyan herkes'
+
+vi:
+  column:
+    task: 'Nhiệm vụ'
+    lane: Làn
+    who: 'Ai có thể thực hiện'
+    interrupted: 'Bị gián đoạn bởi'
+  who:
+    automatic: 'Không ai — thực hiện tự động'
+    grant: 'Thành viên trong nhóm được cấp quyền: %grant%'
+    role: 'Vai trò: %role%'
+    anyone: 'Bất kỳ ai đọc quy trình'
+
+id:
+  column:
+    task: Tugas
+    lane: Jalur
+    who: 'Siapa yang dapat bertindak'
+    interrupted: 'Dihentikan oleh'
+  who:
+    automatic: 'Tidak ada — dilakukan secara otomatis'
+    grant: 'Anggota tim yang diberikan: %grant%'
+    role: 'Peran: %role%'
+    anyone: 'Siapa saja yang membaca proses'
+
+nl:
+  column:
+    task: Taak
+    lane: Lijn
+    who: 'Wie mag handelen'
+    interrupted: 'Onderbroken door'
+  who:
+    automatic: 'Niemand — automatisch gedaan'
+    grant: 'Teamleden toegewezen: %grant%'
+    role: 'Rol: %role%'
+    anyone: 'Iedereen die het proces leest'

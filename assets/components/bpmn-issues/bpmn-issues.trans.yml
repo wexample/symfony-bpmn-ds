@@ -9,3 +9,60 @@ zh:
 
 ar:
   valid: 'العملية صالحة، وكل ما تم رسمه يعمل.'
+
+hi:
+  valid: 'यह प्रक्रिया मान्य है, और सब कुछ चल रहा है।'
+
+he:
+  valid: 'התהליך תקף, וכל מה שנוצר רץ.'
+
+fa:
+  valid: 'فرایند معتبر است و همه چیزهایی که کشیده شده اجرا می‌شود.'
+
+ur:
+  valid: 'عمل درست ہے، اور جو کچھ بھی بنایا گیا ہے وہ چل رہا ہے۔'
+
+ja:
+  valid: プロセスは有効であり、描画されたすべてが実行されます。
+
+ko:
+  valid: '프로세스가 유효하며, 그려진 모든 것이 실행됩니다.'
+
+bn:
+  valid: 'প্রক্রিয়াটি বৈধ, এবং অঙ্কিত সবকিছু চালানো হচ্ছে।'
+
+th:
+  valid: 'กระบวนการถูกต้อง และทุกอย่างที่วาดจะทำงาน'
+
+de:
+  valid: 'Der Prozess ist gültig, und alles Gezeichnete wird ausgeführt.'
+
+fi:
+  valid: 'Prosessi on voimassa, ja kaikki piirrettävä suoritetaan.'
+
+ru:
+  valid: 'Процесс действителен, и всё нарисованное выполняется.'
+
+pl:
+  valid: 'Proces jest ważny, a wszystko co narysowane jest wykonywane.'
+
+es:
+  valid: 'El proceso es válido y todo lo dibujado se ejecuta.'
+
+it:
+  valid: 'Il processo è valido e tutto ciò che è tracciato viene eseguito.'
+
+pt_BR:
+  valid: 'O processo é válido e tudo que foi desenhado é executado.'
+
+tr:
+  valid: 'İşlem geçerlidir ve çizilen her şey çalıştırılır.'
+
+vi:
+  valid: 'Quá trình này là hợp lệ, và mọi thứ được vẽ đều được thực thi.'
+
+id:
+  valid: 'Proses ini valid, dan semua yang digambar dijalankan.'
+
+nl:
+  valid: 'Het proces is geldig en alles wat is getekend wordt uitgevoerd.'

@@ -53,3 +53,269 @@ ar:
     kind: النوع
     lane: 'من يقوم بالعمل'
     documentation: التوثيق
+
+hi:
+  validation: मान्यता
+  tab:
+    description: विवरण
+    paths: मार्ग
+    actors: अभिनेताओं
+  step:
+    title: चरण
+    none: 'आरेख के किसी चरण पर क्लिक करें ताकि आप जान सकें कि यह क्या है। आरेख को खींचें, या इसे स्क्रॉल करें, ताकि आप इसका अनुसरण कर सकें।'
+    name: नाम
+    kind: प्रकार
+    lane: 'कौन कार्य करता है'
+    documentation: प्रलेखन
+
+he:
+  validation: אימות
+  tab:
+    description: תיאור
+    paths: מסלולים
+    actors: שחקנים
+  step:
+    title: שלב
+    none: 'לחץ על שלב בדיאגרמה כדי לקרוא מהו. גרור את הדיאגרמה או גלול אותה כדי לעקוב אחריה.'
+    name: שם
+    kind: סוג
+    lane: 'מי פועל'
+    documentation: תיעוד
+
+fa:
+  validation: اعتبارسنجی
+  tab:
+    description: توضیحات
+    paths: مسیرها
+    actors: بازیگران
+  step:
+    title: مرحله
+    none: 'برای خواندن توضیحات، روی یک مرحله از دیاگرام کلیک کنید. دیاگرام را بکشید یا اسکرول کنید تا آن را دنبال کنید.'
+    name: نام
+    kind: نوع
+    lane: 'چه کسی عمل می‌کند'
+    documentation: مستندات
+
+ur:
+  validation: تصدیق
+  tab:
+    description: تفصیل
+    paths: راستے
+    actors: اداکار
+  step:
+    title: مرحلہ
+    none: 'ڈایاگرام کے کسی مرحلے پر دبائیں تاکہ یہ جان سکیں کہ یہ کیا ہے۔ ڈایاگرام کو کھینچیں، یا اسے سکرول کریں، تاکہ اس کی پیروی کر سکیں۔'
+    name: نام
+    kind: قسم
+    lane: 'کون عمل کرتا ہے'
+    documentation: دستاویزات
+
+ja:
+  validation: 検証
+  tab:
+    description: 説明
+    paths: パス
+    actors: アクター
+  step:
+    title: ステップ
+    none: 図のステップを押して、その内容を確認してください。図をドラッグするか、スクロールして追跡してください。
+    name: 名前
+    kind: 種類
+    lane: 誰が実行するか
+    documentation: ドキュメント
+
+ko:
+  validation: '유효성 검사'
+  tab:
+    description: 설명
+    paths: 경로
+    actors: 행위자
+  step:
+    title: 단계
+    none: '다이어그램의 단계를 눌러 내용을 확인하세요. 다이어그램을 드래그하거나 스크롤하여 따라가세요.'
+    name: 이름
+    kind: 종류
+    lane: '누가 수행하는지'
+    documentation: 문서
+
+bn:
+  validation: যাচাইকরণ
+  tab:
+    description: বিবরণ
+    paths: পথসমূহ
+    actors: অভিনেতাগণ
+  step:
+    title: পর্যায়
+    none: 'ডায়াগ্রামের একটি পর্যায়ে চাপুন এটি কি তা পড়ার জন্য। ডায়াগ্রামটি টেনে আনুন, অথবা এটি অনুসরণ করতে স্ক্রল করুন।'
+    name: নাম
+    kind: প্রকার
+    lane: 'কারা কাজ করে'
+    documentation: নথিপত্র
+
+th:
+  validation: การตรวจสอบ
+  tab:
+    description: คำอธิบาย
+    paths: เส้นทาง
+    actors: ผู้แสดง
+  step:
+    title: ขั้นตอน
+    none: 'กดที่ขั้นตอนในแผนภาพเพื่ออ่านสิ่งที่มันคือ ลากแผนภาพ หรือเลื่อนมัน เพื่อติดตามมัน'
+    name: ชื่อ
+    kind: ประเภท
+    lane: ใครทำหน้าที่
+    documentation: เอกสารประกอบ
+
+de:
+  validation: Validierung
+  tab:
+    description: Beschreibung
+    paths: Pfad
+    actors: Akteure
+  step:
+    title: Schritt
+    none: 'Drücken Sie einen Schritt im Diagramm, um zu lesen, was es ist. Ziehen Sie das Diagramm oder scrollen Sie, um ihm zu folgen.'
+    name: Name
+    kind: Art
+    lane: 'Wer handelt'
+    documentation: Dokumentation
+
+fi:
+  validation: Validointi
+  tab:
+    description: Kuvaus
+    paths: Polut
+    actors: Toimijat
+  step:
+    title: Vaihe
+    none: 'Paina kaavion vaihetta nähdäksesi, mitä se on. Vedä kaaviota tai vieritä sitä seuratakseen sitä.'
+    name: Nimi
+    kind: Tyyppi
+    lane: 'Kuka toimii'
+    documentation: Dokumentaatio
+
+ru:
+  validation: Валидация
+  tab:
+    description: Описание
+    paths: Пути
+    actors: Акторы
+  step:
+    title: Шаг
+    none: 'Нажмите на шаг диаграммы, чтобы прочитать, что это. Перетаскивайте диаграмму или прокручивайте её, чтобы следить за ней.'
+    name: Название
+    kind: Тип
+    lane: 'Кто действует'
+    documentation: Документация
+
+pl:
+  validation: Walidacja
+  tab:
+    description: Opis
+    paths: Ścieżki
+    actors: Aktory
+  step:
+    title: Krok
+    none: 'Naciśnij krok diagramu, aby zobaczyć, co to jest. Przeciągnij diagram lub przewiń, aby go śledzić.'
+    name: Nazwa
+    kind: Rodzaj
+    lane: 'Kto działa'
+    documentation: Dokumentacja
+
+es:
+  validation: Validación
+  tab:
+    description: Descripción
+    paths: Rutas
+    actors: Actores
+  step:
+    title: Paso
+    none: 'Presiona un paso del diagrama para leer de qué se trata. Arrastra el diagrama o desplázate para seguirlo.'
+    name: Nombre
+    kind: Tipo
+    lane: 'Quién actúa'
+    documentation: Documentación
+
+it:
+  validation: Validazione
+  tab:
+    description: Descrizione
+    paths: Percorsi
+    actors: Attori
+  step:
+    title: Passo
+    none: 'Premi un passo del diagramma per leggere di cosa si tratta. Trascina il diagramma o scorri per seguirlo.'
+    name: Nome
+    kind: Tipo
+    lane: 'Chi agisce'
+    documentation: Documentazione
+
+pt_BR:
+  validation: Validação
+  tab:
+    description: Descrição
+    paths: Caminhos
+    actors: Atores
+  step:
+    title: Etapa
+    none: 'Pressione uma etapa do diagrama para ler o que é. Arraste o diagrama ou role para segui-lo.'
+    name: Nome
+    kind: Tipo
+    lane: 'Quem age'
+    documentation: Documentação
+
+tr:
+  validation: Doğrulama
+  tab:
+    description: Açıklama
+    paths: Yollar
+    actors: Aktörler
+  step:
+    title: Adım
+    none: 'Diagramın bir adımına basarak ne olduğunu okuyun. Diyagramı sürükleyin veya takip etmek için kaydırın.'
+    name: İsim
+    kind: Tür
+    lane: 'Kim hareket ediyor'
+    documentation: Dokümantasyon
+
+vi:
+  validation: 'Xác thực'
+  tab:
+    description: 'Mô tả'
+    paths: 'Đường dẫn'
+    actors: 'Diễn viên'
+  step:
+    title: Bước
+    none: 'Nhấn vào một bước của sơ đồ để đọc nội dung của nó. Kéo sơ đồ hoặc cuộn để theo dõi.'
+    name: Tên
+    kind: Loại
+    lane: 'Ai thực hiện'
+    documentation: 'Tài liệu'
+
+id:
+  validation: Validasi
+  tab:
+    description: Deskripsi
+    paths: Jalur
+    actors: Aktor
+  step:
+    title: Langkah
+    none: 'Tekan langkah dari diagram untuk membaca apa itu. Seret diagram, atau gulir untuk mengikutinya.'
+    name: Nama
+    kind: Jenis
+    lane: 'Siapa yang bertindak'
+    documentation: Dokumentasi
+
+nl:
+  validation: Validatie
+  tab:
+    description: Beschrijving
+    paths: Paden
+    actors: Actoren
+  step:
+    title: Stap
+    none: 'Druk op een stap van het diagram om te lezen wat het is. Sleep het diagram of scroll erdoor om het te volgen.'
+    name: Naam
+    kind: Soort
+    lane: 'Wie handelt'
+    documentation: Documentatie

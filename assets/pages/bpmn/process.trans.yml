@@ -13,3 +13,79 @@ zh:
 ar:
   page_title: معالجة
   page_icon: 'ph:bold/flow-arrow'
+
+hi:
+  page_title: प्रक्रिया
+  page_icon: 'ph:bold/flow-arrow'
+
+he:
+  page_title: תהליך
+  page_icon: 'ph:bold/flow-arrow'
+
+fa:
+  page_title: فرآیند
+  page_icon: 'ph:bold/flow-arrow'
+
+ur:
+  page_title: عمل
+  page_icon: 'ph:bold/flow-arrow'
+
+ja:
+  page_title: プロセス
+  page_icon: 'ph:bold/flow-arrow'
+
+ko:
+  page_title: 프로세스
+  page_icon: 'ph:bold/flow-arrow'
+
+bn:
+  page_title: প্রক্রিয়া
+  page_icon: 'ph:bold/flow-arrow'
+
+th:
+  page_title: กระบวนการ
+  page_icon: 'ph:bold/flow-arrow'
+
+de:
+  page_title: Prozess
+  page_icon: 'ph:bold/flow-arrow'
+
+fi:
+  page_title: Prosessi
+  page_icon: 'ph:bold/flow-arrow'
+
+ru:
+  page_title: Процесс
+  page_icon: 'ph:bold/flow-arrow'
+
+pl:
+  page_title: Proces
+  page_icon: 'ph:bold/flow-arrow'
+
+es:
+  page_title: Proceso
+  page_icon: 'ph:bold/flow-arrow'
+
+it:
+  page_title: Elaborazione
+  page_icon: 'ph:bold/flow-arrow'
+
+pt_BR:
+  page_title: Processo
+  page_icon: 'ph:bold/flow-arrow'
+
+tr:
+  page_title: İşlem
+  page_icon: 'ph:bold/flow-arrow'
+
+vi:
+  page_title: 'Quy trình'
+  page_icon: 'ph:bold/flow-arrow'
+
+id:
+  page_title: Proses
+  page_icon: 'ph:bold/flow-arrow'
+
+nl:
+  page_title: Proces
+  page_icon: 'ph:bold/flow-arrow'

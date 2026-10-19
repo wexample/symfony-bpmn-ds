@@ -37,3 +37,193 @@ ar:
   previous: 'الخطوة السابقة'
   next: 'الخطوة التالية'
   all: 'المسار بالكامل'
+
+hi:
+  path: 'पथ %number%'
+  none: 'इस प्रक्रिया का कोई पथ नहीं है जो इसके प्रारंभ से अंत तक जाता है।'
+  loop: 'यह पथ स्वयं पर लौटता है; इसे एक बार पूरा किया जाता है।'
+  chose: 'चुनी गई मार्ग: %choice%'
+  step: 'कदम %step% में %count%'
+  previous: 'पिछला कदम'
+  next: 'अगला कदम'
+  all: 'पूरा पथ'
+
+he:
+  path: 'מסלול %number%'
+  none: 'תהליך זה אינו כולל מסלול מההתחלה ועד הסוף.'
+  loop: 'מסלול זה חוזר על עצמו; הוא נלמד סיבוב אחד.'
+  chose: 'דרך שנבחרה: %choice%'
+  step: 'שלב %step% מתוך %count%'
+  previous: 'שלב קודם'
+  next: 'שלב הבא'
+  all: 'המסלול כולו'
+
+fa:
+  path: 'مسیر %number%'
+  none: 'این فرآیند از ابتدا تا انتها مسیری ندارد.'
+  loop: 'این مسیر به خود باز می‌گردد؛ یک دور طی می‌شود.'
+  chose: 'مسیر انتخاب شده: %choice%'
+  step: 'گام %step% از %count%'
+  previous: 'گام قبلی'
+  next: 'گام بعدی'
+  all: 'کل مسیر'
+
+ur:
+  path: 'راستہ %number%'
+  none: 'اس عمل کا شروع سے آخر تک کوئی راستہ نہیں ہے۔'
+  loop: 'یہ راستہ خود پر واپس آتا ہے؛ یہ ایک بار چلا جاتا ہے۔'
+  chose: 'اختیار کردہ راستہ: %choice%'
+  step: 'قدم %step% از %count%'
+  previous: 'پچھلا قدم'
+  next: 'اگلا قدم'
+  all: 'پورا راستہ'
+
+ja:
+  path: 'パス %number%'
+  none: このプロセスには開始から終了までのパスがありません。
+  loop: 'このパスは自分自身に戻ります; 一周します。'
+  chose: '選択した経路: %choice%'
+  step: 'ステップ %step% / %count%'
+  previous: 前のステップ
+  next: 次のステップ
+  all: 全体のパス
+
+ko:
+  path: '경로 %number%'
+  none: '이 프로세스는 시작에서 끝까지의 경로가 없습니다.'
+  loop: '이 경로는 자신으로 돌아옵니다; 한 바퀴 돌아야 합니다.'
+  chose: '선택한 경로: %choice%'
+  step: '단계 %step% 중 %count%'
+  previous: '이전 단계'
+  next: '다음 단계'
+  all: '전체 경로'
+
+bn:
+  path: 'পথ %number%'
+  none: 'এই প্রক্রিয়াটি শুরু থেকে শেষ পর্যন্ত কোন পথ নেই।'
+  loop: 'এই পথ নিজেই ফিরে আসে; এটি একবার ঘুরে হাঁটা হয়।'
+  chose: 'নির্বাচিত পথ: %choice%'
+  step: 'ধাপ %step% এর %count%'
+  previous: 'পূর্ববর্তী ধাপ'
+  next: 'পরবর্তী ধাপ'
+  all: 'সম্পূর্ণ পথ'
+
+th:
+  path: 'เส้นทาง %number%'
+  none: กระบวนการนี้ไม่มีเส้นทางจากจุดเริ่มต้นไปยังจุดสิ้นสุด
+  loop: 'เส้นทางนี้กลับมาที่เดิม; เดินรอบหนึ่งครั้ง'
+  chose: 'เส้นทางที่เลือก: %choice%'
+  step: 'ขั้นตอน %step% จาก %count%'
+  previous: ขั้นตอนก่อนหน้า
+  next: ขั้นตอนถัดไป
+  all: เส้นทางทั้งหมด
+
+de:
+  path: 'Pfad %number%'
+  none: 'Dieser Prozess hat keinen Pfad von seinem Anfang bis zu einem Ende.'
+  loop: 'Dieser Pfad kommt auf sich selbst zurück; er wird einmal umrundet.'
+  chose: 'Weg gewählt: %choice%'
+  step: 'Schritt %step% von %count%'
+  previous: 'Vorheriger Schritt'
+  next: 'Nächster Schritt'
+  all: 'Gesamter Pfad'
+
+fi:
+  path: 'Polku %number%'
+  none: 'Tällä prosessilla ei ole polkua alusta loppuun.'
+  loop: 'Tämä polku palaa itsensä ympäri; se kuljetaan kerran ympäri.'
+  chose: 'Valittu reitti: %choice%'
+  step: 'Askellus %step% / %count%'
+  previous: 'Edellinen askel'
+  next: 'Seuraava askel'
+  all: 'Koko polku'
+
+ru:
+  path: 'Путь %number%'
+  none: 'Этот процесс не имеет пути от начала до конца.'
+  loop: 'Этот путь возвращается к самому себе; он проходит один раз.'
+  chose: 'Выбранный путь: %choice%'
+  step: 'Шаг %step% из %count%'
+  previous: 'Предыдущий шаг'
+  next: 'Следующий шаг'
+  all: 'Целый путь'
+
+pl:
+  path: 'Ścieżka %number%'
+  none: 'Ten proces nie ma ścieżki od początku do końca.'
+  loop: 'Ta ścieżka wraca na siebie; pokonuje się ją raz dookoła.'
+  chose: 'Wybrana droga: %choice%'
+  step: 'Krok %step% z %count%'
+  previous: 'Poprzedni krok'
+  next: 'Następny krok'
+  all: 'Cała ścieżka'
+
+es:
+  path: 'Ruta %number%'
+  none: 'Este proceso no tiene un camino desde su inicio hasta un final.'
+  loop: 'Este camino regresa sobre sí mismo; se recorre una vez.'
+  chose: 'Camino tomado: %choice%'
+  step: 'Paso %step% de %count%'
+  previous: 'Paso anterior'
+  next: 'Siguiente paso'
+  all: 'Todo el camino'
+
+it:
+  path: 'Percorso %number%'
+  none: 'Questo processo non ha un percorso dal suo inizio a una fine.'
+  loop: 'Questo percorso ritorna su se stesso; viene percorso una volta.'
+  chose: 'Percorso preso: %choice%'
+  step: 'Passo %step% di %count%'
+  previous: 'Passo precedente'
+  next: 'Passo successivo'
+  all: 'Percorso completo'
+
+pt_BR:
+  path: 'Caminho %number%'
+  none: 'Este processo não tem um caminho do início ao fim.'
+  loop: 'Este caminho retorna sobre si mesmo; é percorrido uma vez.'
+  chose: 'Caminho tomado: %choice%'
+  step: 'Passo %step% de %count%'
+  previous: 'Passo anterior'
+  next: 'Próximo passo'
+  all: 'Caminho completo'
+
+tr:
+  path: 'Yol %number%'
+  none: 'Bu süreç başlangıcından sonuna kadar bir yol içermiyor.'
+  loop: 'Bu yol kendisine geri dönüyor; bir kez çevriliyor.'
+  chose: 'Alınan yol: %choice%'
+  step: 'Adım %step% / %count%'
+  previous: 'Önceki adım'
+  next: 'Sonraki adım'
+  all: 'Tam yol'
+
+vi:
+  path: 'Đường dẫn %number%'
+  none: 'Quá trình này không có đường dẫn từ điểm bắt đầu đến điểm kết thúc.'
+  loop: 'Đường dẫn này quay trở lại chính nó; nó được đi một vòng.'
+  chose: 'Đường đi đã chọn: %choice%'
+  step: 'Bước %step% trong %count%'
+  previous: 'Bước trước'
+  next: 'Bước tiếp theo'
+  all: 'Toàn bộ đường dẫn'
+
+id:
+  path: 'Jalur %number%'
+  none: 'Proses ini tidak memiliki jalur dari awal hingga akhir.'
+  loop: 'Jalur ini kembali kepada dirinya sendiri; dilalui satu kali.'
+  chose: 'Jalan yang diambil: %choice%'
+  step: 'Langkah %step% dari %count%'
+  previous: 'Langkah sebelumnya'
+  next: 'Langkah berikutnya'
+  all: 'Seluruh jalur'
+
+nl:
+  path: 'Pad %number%'
+  none: 'Dit proces heeft geen pad van begin tot eind.'
+  loop: 'Dit pad komt terug op zichzelf; het wordt één keer gelopen.'
+  chose: 'Gekozen weg: %choice%'
+  step: 'Stap %step% van %count%'
+  previous: 'Vorige stap'
+  next: 'Volgende stap'
+  all: 'Hele pad'

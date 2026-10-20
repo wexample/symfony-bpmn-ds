@@ -1,5 +1,6 @@
 en:
   page_title: Processes
+  document_title: "Business processes in BPMN, step by step"
   page_description: "Business rules read as BPMN processes: who acts, what an action triggers, where the path forks — open one and walk through it step by step."
   page_icon: ph:bold/flow-arrow
   intro: >-

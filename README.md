@@ -1,6 +1,6 @@
 # symfony-bpmn-ds
 
-Version: 2.0.4
+Version: 2.0.5
 
 The interface of symfony-bpmn: a process drawn, walked, its rights and its validation
 
@@ -25,8 +25,8 @@ The suite includes packages for configuration management, file handling, prompts
 
 - php: >=8.5
 - wexample/symfony-helpers: >=17.0.0
-- wexample/symfony-loader: >=23.2.0
-- wexample/symfony-design-system: >=37.0.0
+- wexample/symfony-loader: >=23.3.0
+- wexample/symfony-design-system: >=38.0.0
 - wexample/symfony-api: >=14.0.0
 - wexample/symfony-bpmn: >=3.0.0
 - wexample/symfony-stage: >=2.0.0

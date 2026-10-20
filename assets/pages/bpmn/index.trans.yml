@@ -1,5 +1,6 @@
 en:
   page_title: Processes
+  page_description: "Business rules read as BPMN processes: who acts, what an action triggers, where the path forks — open one and walk through it step by step."
   page_icon: ph:bold/flow-arrow
   intro: >-
     The rules of the platform, each a process: who acts (the lanes), what an
@@ -8,6 +9,7 @@ en:
 
 fr:
   page_title: Processus
+  page_description: "Les règles métier lues comme des processus BPMN : qui agit, ce qu'une action déclenche, où le chemin bifurque — ouvrez-en un et parcourez-le pas à pas."
   page_icon: ph:bold/flow-arrow
   intro: >-
     Les règles de la plateforme, chacune un processus : qui agit (les
@@ -16,105 +18,126 @@ fr:
 
 zh:
   page_title: 流程
+  page_description: "以 BPMN 流程呈现的业务规则：谁来执行、一个操作会触发什么、路径在哪里分叉——打开一个流程，逐步走查。"
   page_icon: 'ph:bold/flow-arrow'
   intro: 平台的规则，每个都是一个流程：谁行动（参与者），一个动作引发什么（消息、计时器），路径分叉的地方。打开一个来阅读它，并一步一步走过它的路径。
 
 ar:
   page_title: العمليات
+  page_description: "قواعد العمل مقروءة كعمليات BPMN: من يتصرف، وما الذي يطلقه الإجراء، وأين يتفرع المسار — افتح واحدة وامشِ فيها خطوة بخطوة."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'قواعد المنصة، كل منها عملية: من يتصرف (المسارات)، ماذا يحدث عند اتخاذ إجراء (رسائل، مؤقتات)، أين تتفرع الطريق. افتح واحدة لقراءتها، وامشِ في مساراتها خطوة بخطوة.'
 
 hi:
   page_title: प्रक्रियाएँ
+  page_description: "BPMN प्रक्रियाओं के रूप में व्यावसायिक नियम: कौन कार्य करता है, कोई क्रिया क्या शुरू करती है, रास्ता कहाँ बँटता है — एक खोलें और चरण-दर-चरण चलें।"
   page_icon: 'ph:bold/flow-arrow'
   intro: 'प्लेटफ़ॉर्म के नियम, प्रत्येक एक प्रक्रिया: कौन कार्य करता है (लेन), एक क्रिया क्या शुरू करती है (संदेश, टाइमर), कहाँ रास्ता विभाजित होता है। एक को खोलें इसे पढ़ने के लिए, और इसके पथों पर कदम से कदम मिलाकर चलें।'
 
 he:
   page_title: תהליכים
+  page_description: "כללים עסקיים כתהליכי BPMN: מי פועל, מה פעולה מפעילה, היכן הדרך מתפצלת — פתחו אחד ועברו עליו צעד אחר צעד."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'חוקי הפלטפורמה, כל אחד מהם תהליך: מי פועל (המסלולים), מה פעולה מפעילה (מסרים, טיימרים), היכן הדרך מתפצלת. פתח אחד כדי לקרוא אותו, וצעד על הנתיבים שלו שלב אחר שלב.'
 
 fa:
   page_title: فرایندها
+  page_description: "قواعد کسب‌وکار در قالب فرایندهای BPMN: چه کسی عمل می‌کند، هر کنش چه چیزی را به راه می‌اندازد، مسیر کجا دوشاخه می‌شود — یکی را باز کنید و گام‌به‌گام پیش بروید."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'قوانین پلتفرم، هر کدام یک فرایند: چه کسی عمل می‌کند (مسیرها)، چه چیزی یک عمل را آغاز می‌کند (پیام‌ها، تایمرها)، کجا راه تقسیم می‌شود. یکی را باز کنید تا آن را بخوانید و قدم به قدم مسیرهای آن را طی کنید.'
 
 ur:
   page_title: عملیات
+  page_description: "BPMN عمل کی صورت میں کاروباری قواعد: کون عمل کرتا ہے، کوئی عمل کیا شروع کرتا ہے، راستہ کہاں تقسیم ہوتا ہے — ایک کھولیں اور قدم بہ قدم چلیں۔"
   page_icon: 'ph:bold/flow-arrow'
   intro: 'پلیٹ فارم کے اصول، ہر ایک عمل: کون عمل کرتا ہے (لائنیں)، ایک عمل کیا شروع کرتا ہے (پیغامات، ٹائمر)، کہاں راستہ تقسیم ہوتا ہے۔ ایک کو کھولیں تاکہ اسے پڑھ سکیں، اور اس کے راستوں پر قدم بہ قدم چلیں۔'
 
 ja:
   page_title: プロセス
+  page_description: "BPMN プロセスとして読む業務ルール。誰が動くか、操作が何を引き起こすか、どこで道が分かれるか。ひとつ開いて一歩ずつたどれます。"
   page_icon: 'ph:bold/flow-arrow'
   intro: プラットフォームのルール、それぞれがプロセスです：誰が行動するか（レーン）、何がアクションを引き起こすか（メッセージ、タイマー）、どこで道が分岐するか。1つを開いて読み、ステップバイステップでその道を進んでください。
 
 ko:
   page_title: 프로세스
+  page_description: "BPMN 프로세스로 읽는 업무 규칙: 누가 행동하는지, 행동이 무엇을 일으키는지, 경로가 어디서 갈라지는지 — 하나를 열어 단계별로 따라가 보세요."
   page_icon: 'ph:bold/flow-arrow'
   intro: '플랫폼의 규칙, 각각이 프로세스입니다: 누가 행동하는지 (레인), 행동이 무엇을 촉발하는지 (메시지, 타이머), 길이 어떻게 갈라지는지. 하나를 열어 읽고, 그 경로를 단계별로 걸어가세요.'
 
 bn:
   page_title: প্রক্রিয়াসমূহ
+  page_description: "BPMN প্রক্রিয়া হিসেবে ব্যবসায়িক নিয়ম: কে কাজ করে, একটি কাজ কী শুরু করে, পথ কোথায় ভাগ হয় — একটি খুলুন এবং ধাপে ধাপে এগিয়ে যান।"
   page_icon: 'ph:bold/flow-arrow'
   intro: 'প্ল্যাটফর্মের নিয়মসমূহ, প্রতিটি একটি প্রক্রিয়া: কে কাজ করে (লেন), একটি ক্রিয়া কীকে প্রভাবিত করে (বার্তা, টাইমার), কোথায় পথ বিভক্ত হয়। একটি খুলুন এটি পড়ার জন্য, এবং এর পথগুলো ধাপে ধাপে অনুসরণ করুন।'
 
 th:
   page_title: กระบวนการ
+  page_description: "กฎทางธุรกิจที่อ่านเป็นกระบวนการ BPMN: ใครเป็นผู้ทำ การกระทำหนึ่งกระตุ้นอะไร เส้นทางแยกที่ใด — เปิดหนึ่งกระบวนการแล้วไล่ดูทีละขั้น"
   page_icon: 'ph:bold/flow-arrow'
   intro: 'กฎของแพลตฟอร์ม แต่ละข้อเป็นกระบวนการ: ใครทำ (เลน), สิ่งที่การกระทำกระตุ้น (ข้อความ, ตัวจับเวลา), ที่ทางแยก. เปิดหนึ่งเพื่ออ่านมัน และเดินตามเส้นทางทีละขั้นตอน.'
 
 de:
   page_title: Prozesse
+  page_description: "Geschäftsregeln als BPMN-Prozesse gelesen: wer handelt, was eine Aktion auslöst, wo sich der Weg gabelt — einen öffnen und Schritt für Schritt durchgehen."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Die Regeln der Plattform, jeder ein Prozess: wer handelt (die Spuren), was eine Aktion auslöst (Nachrichten, Timer), wo der Weg sich gabelt. Öffne einen, um ihn zu lesen, und gehe seine Wege Schritt für Schritt.'
 
 fi:
   page_title: Prosessit
+  page_description: "Liiketoimintasäännöt BPMN-prosesseina: kuka toimii, mitä toiminto käynnistää, missä polku haarautuu — avaa yksi ja käy se läpi vaihe vaiheelta."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Alustan säännöt, jokainen prosessi: kuka toimii (kaistat), mitä toiminta käynnistää (viestit, ajastimet), mihin tie jakautuu. Avaa yksi lukeaksesi sen, ja kulje sen polkuja askel askeleelta.'
 
 ru:
   page_title: Процессы
+  page_description: "Бизнес-правила в виде BPMN-процессов: кто действует, что запускает действие, где путь разветвляется — откройте любой и пройдите его шаг за шагом."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Правила платформы, каждое из которых является процессом: кто действует (дороги), что запускает действие (сообщения, таймеры), где путь разделяется. Откройте один, чтобы прочитать его, и пройдите его пути шаг за шагом.'
 
 pl:
   page_title: Procesy
+  page_description: "Reguły biznesowe jako procesy BPMN: kto działa, co uruchamia dane działanie, gdzie ścieżka się rozwidla — otwórz jeden i przejdź go krok po kroku."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Zasady platformy, każdy to proces: kto działa (ścieżki), co uruchamia akcja (wiadomości, timery), gdzie ścieżka się rozwidla. Otwórz jeden, aby go przeczytać i przejść przez jego ścieżki krok po kroku.'
 
 es:
   page_title: Procesos
+  page_description: "Reglas de negocio leídas como procesos BPMN: quién actúa, qué desencadena una acción, dónde se bifurca el camino — abra uno y recórralo paso a paso."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Las reglas de la plataforma, cada una un proceso: quién actúa (los carriles), qué desencadena una acción (mensajes, temporizadores), dónde se bifurca el camino. Abre uno para leerlo y recorre sus caminos paso a paso.'
 
 it:
   page_title: Processi
+  page_description: "Regole di business lette come processi BPMN: chi agisce, cosa innesca un'azione, dove il percorso si dirama — aprine uno e percorrilo passo dopo passo."
   page_icon: 'ph:bold/flow-arrow'
   intro: "Le regole della piattaforma, ognuna un processo: chi agisce (le corsie), cosa attiva un'azione (messaggi, timer), dove la strada si biforca. Aprine uno per leggerlo e segui i suoi percorsi passo dopo passo."
 
 pt_BR:
   page_title: Processos
+  page_description: "Regras de negócio lidas como processos BPMN: quem age, o que uma ação dispara, onde o caminho se divide — abra um e percorra-o passo a passo."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'As regras da plataforma, cada uma um processo: quem atua (as faixas), o que uma ação desencadeia (mensagens, temporizadores), onde o caminho se divide. Abra um para lê-lo e percorra seus caminhos passo a passo.'
 
 tr:
   page_title: Süreçler
+  page_description: "BPMN süreçleri olarak okunan iş kuralları: kim hareket eder, bir eylem neyi tetikler, yol nerede ayrılır — birini açın ve adım adım izleyin."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Platformun kuralları, her biri bir süreç: kim hareket eder (şeritler), bir eylemin neyi tetiklediği (mesajlar, zamanlayıcılar), yolun nereye ayrıldığı. Birini açın ve adım adım yollarında ilerleyin.'
 
 vi:
   page_title: 'Quy trình'
+  page_description: "Quy tắc nghiệp vụ dưới dạng quy trình BPMN: ai hành động, một thao tác kích hoạt điều gì, lối đi rẽ nhánh ở đâu — mở một quy trình và đi qua từng bước."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Các quy tắc của nền tảng, mỗi quy tắc là một quy trình: ai thực hiện (các làn đường), hành động nào sẽ kích hoạt (tin nhắn, bộ đếm thời gian), nơi con đường phân nhánh. Mở một quy trình để đọc và đi qua các bước của nó.'
 
 id:
   page_title: Proses
+  page_description: "Aturan bisnis dibaca sebagai proses BPMN: siapa yang bertindak, apa yang dipicu suatu tindakan, di mana jalurnya bercabang — buka satu dan telusuri langkah demi langkah."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'Aturan platform, masing-masing adalah proses: siapa yang bertindak (jalur), apa yang dihasilkan dari suatu tindakan (pesan, timer), di mana jalannya bercabang. Buka satu untuk membacanya, dan telusuri jalannya langkah demi langkah.'
 
 nl:
   page_title: Processen
+  page_description: "Bedrijfsregels gelezen als BPMN-processen: wie handelt, wat een actie in gang zet, waar het pad splitst — open er een en doorloop het stap voor stap."
   page_icon: 'ph:bold/flow-arrow'
   intro: 'De regels van het platform, elk een proces: wie handelt (de lanes), wat een actie in gang zet (berichten, timers), waar het pad zich splitst. Open er één om het te lezen en wandel stap voor stap zijn paden.'

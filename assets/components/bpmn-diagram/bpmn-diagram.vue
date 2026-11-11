@@ -1,5 +1,7 @@
 <script>
 import Stage from '@wexample/symfony-stage/components/stage/stage.vue';
+import StageLinks from '@wexample/symfony-stage/components/stage-links/stage-links.vue';
+import StageRegions from '@wexample/symfony-stage/components/stage-regions/stage-regions.vue';
 import AbstractEntityManipulatorVueMixin from '@wexample/symfony-design-system/js/Vue/AbstractEntityManipulatorVueMixin';
 import BpmnLane from '@wexample/symfony-bpmn/Entity/BpmnLane';
 import BpmnNode from '@wexample/symfony-bpmn/Entity/BpmnNode';
@@ -25,7 +27,9 @@ export default {
   mixins: [AbstractEntityManipulatorVueMixin],
 
   components: {
-    Stage
+    Stage,
+    StageLinks,
+    StageRegions
   },
 
   emits: ['loaded', 'update:selection'],

@@ -2,6 +2,8 @@
 
 {%- block vue_require -%}
     {{- vue_require(render_pass, '@WexampleSymfonyStageBundle/components/stage') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyStageBundle/components/stage-links') -}}
+    {{- vue_require(render_pass, '@WexampleSymfonyStageBundle/components/stage-regions') -}}
 {%- endblock -%}
 
 {%- block vue_config -%}
@@ -20,11 +22,14 @@
                 :grid="0"
                 :label="t('label')"
                 :elements="elements"
-                :links="links"
-                :regions="regions"
                 :highlighted="highlighted"
                 @update:selection="(value) => $emit('update:selection', value)"
         >
+            {#- Its lanes under it, its flows between its nodes: layers of the stage. -#}
+            <template #layers>
+                <stage-regions :regions="regions"></stage-regions>
+                <stage-links :links="links"></stage-links>
+            </template>
             {#- Each node drawn with the figures of the stage: a box for what is
                 done, a circle for an event, a diamond for a choice. -#}
             <template #element="{ element }">

@@ -1,6 +1,8 @@
 // A process drawn on the stage, with its figures (stage-shape): all this
 // component says of its own is how tall it stands.
 @use '@wexample/symfony-stage/components/stage/stage';
+@use '@wexample/symfony-stage/components/stage-links/stage-links';
+@use '@wexample/symfony-stage/components/stage-regions/stage-regions';
 
 .bpmn-diagram {
   // The bands are the whole height, plus room for the captions of the last.

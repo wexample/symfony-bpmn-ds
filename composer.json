@@ -1,6 +1,6 @@
 {
   "name": "wexample/symfony-bpmn-ds",
-  "version": "2.0.19",
+  "version": "2.0.20",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -24,7 +24,7 @@
     "php": ">=8.5",
     "wexample/symfony-helpers": ">=19.1.0",
     "wexample/symfony-loader": ">=27.2.0",
-    "wexample/symfony-design-system": ">=43.0.0",
+    "wexample/symfony-design-system": ">=44.0.0",
     "wexample/symfony-api": ">=17.0.0",
     "wexample/symfony-bpmn": ">=4.0.0",
     "wexample/symfony-stage": ">=2.0.0"

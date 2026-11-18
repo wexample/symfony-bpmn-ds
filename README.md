@@ -1,6 +1,6 @@
 # symfony-bpmn-ds
 
-Version: 2.0.24
+Version: 2.0.25
 
 The interface of symfony-bpmn: a process drawn, walked, its rights and its validation
 
